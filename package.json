@@ -24,14 +24,14 @@
     "html-webpack-plugin": "^2.26.0",
     "image-webpack-loader": "^3.4.2",
     "node-sass": "^4.4.0",
-    "pug": "^2.0.0-beta3",
+    "pug": "^2.0.0-rc.4",
     "pug-loader": "^2.3.0",
     "rimraf": "^2.6.0",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.19.0",
     "uglifyjs-webpack-plugin": "^1.0.0-beta.3",
-    "webpack": "^3.8.1",
-    "webpack-dev-server": "^2.2.0"
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.10.1"
   },
   "dependencies": {}
 }
