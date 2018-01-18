@@ -8,6 +8,14 @@
  font-family: "Roboto";
  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
 }
+@font-face {
+  font-family: "AnticDidone";
+  src: url("../fonts/AnticDidone-Regular.ttf") format("truetype");
+ }
+ @font-face {
+  font-family: "BerkshireSwash";
+  src: url("../fonts/BerkshireSwash-Regular.ttf") format("truetype");
+ }
 
 h1 {
   color: brown;
@@ -16,4 +24,8 @@ h1 {
   &:hover {
     color: green;
   }
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
 }
