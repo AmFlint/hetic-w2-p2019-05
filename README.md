@@ -1,5 +1,7 @@
 # hetic-w2-p2019-05
 
+https://fervent-cray-d32469.netlify.com/
+
 ### How to install
 
 After downloading the project repository, you will need to install the dependencies:
