@@ -2,10 +2,8 @@
     display: flex;
     font-family: $Comfortaa;
 }
-// Demander si nest possible pour flex-start/end dans le même fichier
 
 .buttons-wrapper__btn {
-    // height: 44px;
     padding: 12px 5px;
     border: none;
     border-radius: 5px;
@@ -26,7 +24,8 @@
     // not displayed on mobile
     display: none;
     width: 19.5rem;
-    background: $background-button-switch;
+    background: url('../img/button-background.jpg') center no-repeat;
+    background-size: 120%;
     text-transform: uppercase;
 
     @include  desktop() {
