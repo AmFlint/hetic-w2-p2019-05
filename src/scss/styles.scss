@@ -1,10 +1,12 @@
 // Import partials
-@import 'partials/_fonts.scss';
-@import 'partials/_screen.scss';
+@import 'partials/_reset';
+@import 'partials/_fonts';
+@import 'partials/_screen';
 
 // Import blocs
 @import 'blocs/header';
 @import 'blocs/footer';
+@import 'blocs/buttons-wrapper';
 @import 'blocs/consoles';
 @import 'blocs/histoire';
 @import 'blocs/personnages';
