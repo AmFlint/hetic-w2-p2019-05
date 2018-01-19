@@ -1,0 +1,35 @@
+.buttons-wrapper {
+    display: flex;
+    font-family: $Comfortaa;
+}
+
+.buttons-wrapper__btn {
+    padding: 12px 5px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: $font-button-discover;
+    letter-spacing: 0px;
+    color: $font-light;
+    text-transform: uppercase;
+    box-shadow: 0 .1rem .2rem 0 #000000;
+}
+
+.buttons-wrapper__btn_light {
+    width: 12rem;
+    background: $background-button;
+}
+
+.buttons-wrapper__btn_dark {
+    // not displayed on mobile
+    display: none;
+    width: 19.5rem;
+    background: url('../img/button-background.jpg') center no-repeat;
+    background-size: 120%;
+    text-transform: uppercase;
+
+    @include  desktop() {
+        display: block;
+        margin-left: 1rem;
+    }
+}
