@@ -65,7 +65,7 @@ module.exports = {
               },
             // Load images with file-loader | image-webpack-loader
             {
-                test: /\.(jp?eg|png|gif|svg)$/i,
+                test: /\.(jpg|png|gif|svg)$/i,
                 loaders: [
                     'file-loader',
                     'image-webpack-loader'
