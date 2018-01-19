@@ -1,0 +1,20 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.clearfix:before,
+.clearfix:after {	
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear:both;
+}

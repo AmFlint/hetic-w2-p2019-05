@@ -6,6 +6,22 @@
 @import 'blocs/header';
 @import 'blocs/footer';
 @import 'blocs/consoles';
+@import 'blocs/histoire';
+@import 'blocs/personnages';
+@import 'blocs/ennemis';
+
+@font-face {
+ font-family: "Roboto";
+ src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "AnticDidone";
+  src: url("../fonts/AnticDidone-Regular.ttf") format("truetype");
+ }
+ @font-face {
+  font-family: "BerkshireSwash";
+  src: url("../fonts/BerkshireSwash-Regular.ttf") format("truetype");
+ }
 
 h1 {
   color: brown;
@@ -14,4 +30,8 @@ h1 {
   &:hover {
     color: green;
   }
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
 }
