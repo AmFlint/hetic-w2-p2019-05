@@ -1,6 +1,7 @@
 // Import partials
 @import 'partials/_reset';
 @import 'partials/_fonts';
+@import 'partials/_colors';
 @import 'partials/_screen';
 
 // Import blocs
@@ -36,4 +37,8 @@ h1 {
 
 html {
   font-family: 'Roboto', sans-serif;
+}
+
+a, a:hover, a:visited {
+  text-decoration: none;
 }
