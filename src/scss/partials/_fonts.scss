@@ -1,0 +1,26 @@
+// Import font AnticDidone
+@font-face {
+    font-family: "AnticDidone";
+    src: url("../fonts/AnticDidone-Regular.ttf") format("truetype");
+}
+
+// Import font BerkshireSwash
+@font-face {
+    font-family: "BerkshireSwash";
+    src: url("../fonts/BerkhireSwash-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Comfortaa";
+    src: url("Comfortaa-Regular.ttf") format("truetype");
+}
+
+$Didone: 'AnticDidone', 'arial', 'sans-serif';
+$Berkshire: 'BershireSwash', 'arial', 'sans-serif';
+$Comfortaa: 'Comfortaa', 'arial', 'sans-serif';
+
+$font-title: '28px';
+$font-content: '25px';
+$font-button-discover: '17px';
+$font-button-consoles: '14px';
+$font-consoles: '20px';
