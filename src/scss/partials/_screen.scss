@@ -18,3 +18,10 @@
         @content;
     }
 }
+
+// Mixin for tablet in landscape display media query
+@mixin desktop() {
+    @media only screen and (min-width: 1220px) {
+        @content;
+    }
+}
