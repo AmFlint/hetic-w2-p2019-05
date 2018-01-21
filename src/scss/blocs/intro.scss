@@ -1,17 +1,23 @@
 .intro {
   position: relative;
-  @include rem(padding, 20px 15px 50px 15px);
   text-align: center;
   background-image: url("../img/bg-zelda.jpg");
   @include bcg;
   color: $white;
+
+}
+
+.intro__ctn {
+  @include rem(padding, 20px 15px 50px 15px);
+  background: rgba(0, 0, 0, 0.08);
 
   @include tablet-landscape {
     @include rem(padding, 141px 0px 0px 0px);
   }
 }
 
-.intro__logo {
+.intro__ctn__logo {
+  z-index: 2;
   margin-bottom: 50px;
 
   @include tablet-landscape {
@@ -21,7 +27,7 @@
   }
 }
 
-.intro__title {
+.intro__ctn__title {
   margin: 20px 0 77px 0;
   font-family: "AnticDidone";
   font-size: 32px;
@@ -37,13 +43,13 @@
   }
 }
 
-.intro__invitation {
+.intro__ctn__invitation {
   @include rem(margin-top, 74px);
   font-family: "AnticDidone";
   @include rem(font-size, 18px);
 }
 
-.intro__scroll-line {
+.intro__ctn__scroll-line {
   margin: 0 auto;
   @include rem(margin-top, 15px);
   @include rem(height, 40px);
