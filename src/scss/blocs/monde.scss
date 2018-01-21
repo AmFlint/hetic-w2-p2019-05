@@ -1,18 +1,11 @@
 .monde {
   background-image: url("../img/bg-motifs-noir.png");
-  background-size: cover;
-  background-position: center;
+  @include bcg;
   padding: 100px 0;
   @include tablet-landscape {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    @include flexbox();
+    @include justify-content(space-between);
+    @include align-items(center);
     padding: 112px 15px;
   }
 
@@ -43,15 +36,10 @@
       width: 40%;
     }
     h2 {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+      @include flexbox();
+      @include flex-direction(column);
         margin: 40px 0;
-        font-size: 28px;
+        font-size: $font-title;
         font-family: "BerkshireSwash";
         font-weight: 700;
         @include tablet-landscape {
@@ -59,7 +47,6 @@
             margin-top: 0;
         }
         span {
-            font-size: 28px;
             font-family: "AnticDidone";
             font-weight: 400;
         }

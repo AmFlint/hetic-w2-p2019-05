@@ -5,15 +5,9 @@
   color: $black;
 
   @include tablet-landscape {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    @include flexbox();
+    @include justify-content(space-between);
+    @include align-items(center);
     width: 80%;
     margin: 0 auto;
     padding: 116px 250px;

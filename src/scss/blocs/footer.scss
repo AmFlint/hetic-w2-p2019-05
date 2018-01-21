@@ -1,8 +1,7 @@
 .footer {
   text-align: center;
+  @include bcg;
   background-image: url("../img/bg-motifs-noir.png");
-  background-size: cover;
-  background-position: center;
   padding: 50px 15px 93px 15px;
   color: $white;
   @include tablet-landscape {
@@ -15,25 +14,13 @@
 }
 
 .footer__wrapper-socials {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  @include flexbox();
+  @include flex-direction(column);
+  @include align-items(center);
   margin-bottom: 50px;
   @include tablet-portrait {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    @include flex-direction(row);
+    @include justify-content(center);
     margin-bottom: 80px;
   }
 }
