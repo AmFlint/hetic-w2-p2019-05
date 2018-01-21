@@ -1,20 +1,22 @@
 .intro {
   position: relative;
-  padding: 20px 15px 50px 15px;
+  @include rem(padding, 20px 15px 50px 15px);
   text-align: center;
   background: $black;
   color: $white;
+
   @include tablet-landscape {
-    padding: 141px 0 0 0;
+    @include rem(padding, 141px 0px 0px 0px);
   }
 }
 
 .intro__logo {
   margin-bottom: 50px;
+
   @include tablet-landscape {
     position: absolute;
-    top: 40px;
-    left: 40px;
+    @include rem(top, 40px);
+    @include rem(left, 40px);
   }
 }
 
@@ -23,9 +25,10 @@
   font-family: "AnticDidone";
   font-size: 32px;
   font-weight: 700;
+
   @include tablet-landscape {
-    margin:  20px 0 200px 0;
-    font-size: 55px;
+    @include rem(margin, 20px 0px 200px 0px);
+    @include rem(font-size, 55px);
   }
 
   span {
@@ -34,15 +37,15 @@
 }
 
 .intro__invitation {
-  margin-top: 74px;
+  @include rem(margin-top, 74px);
   font-family: "AnticDidone";
-  font-size: 18px;
+  @include rem(font-size, 18px);
 }
 
 .intro__scroll-line {
   margin: 0 auto;
-  margin-top: 15px;
-  height: 40px;
-  width: 1px;
+  @include rem(margin-top, 15px);
+  @include rem(height, 40px);
+  @include rem(width, 1px);
   background: $white;
 }

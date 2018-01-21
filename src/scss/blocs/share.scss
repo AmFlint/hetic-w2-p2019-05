@@ -1,5 +1,5 @@
 .share {
-  padding: 100px 15px;
+  @include rem(padding, 100px 15px);
   text-align: center;
   font-family: "AnticDidone";
   color: $black;
@@ -10,7 +10,7 @@
     @include align-items(center);
     width: 80%;
     margin: 0 auto;
-    padding: 116px 250px;
+    @include rem(padding, 116px 250px);
   }
 
   @include desktop {
@@ -19,20 +19,21 @@
 }
 
 .share__desc {
-  font-size: 16px;
+  @include rem(font-size, 16px);
   line-height: 1.5;
   margin-bottom: 20px;
   @include tablet-landscape {
     margin-bottom: 0;
-    font-size: 18px;
+    @include rem(font-size, 18px);
     text-align: left;
-    margin-right: 30px;
+    @include rem(margin-right, 30px);
   }
 }
 
 .share__btn {
-  width: 172px;
+  @include rem(width, 172px);
+
   @include tablet-landscape {
-    width: 156px;
+    @include rem(width, 156px);
   }
 }

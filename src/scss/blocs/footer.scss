@@ -2,31 +2,33 @@
   text-align: center;
   @include bcg;
   background-image: url("../img/bg-motifs-noir.png");
-  padding: 50px 15px 93px 15px;
+  @include rem(padding, 50px 15px 93px 15px);
   color: $white;
+
   @include tablet-landscape {
-    padding: 76px 0 71px 0;
+    @include rem(padding, 76px 0px 71px 0px);
   }
 }
 
 .footer__logo {
-  margin-bottom: 29px;
+  @include rem(margin-bottom, 29px);
 }
 
 .footer__wrapper-socials {
   @include flexbox();
   @include flex-direction(column);
   @include align-items(center);
-  margin-bottom: 50px;
+  @include rem(margin-bottom, 50px);
+
   @include tablet-portrait {
     @include flex-direction(row);
     @include justify-content(center);
-    margin-bottom: 80px;
+    @include rem(margin-bottom, 80px);
   }
 }
 
 .footer__mentions {
-  font-size: 12px;
+  @include rem(font-size, 12px);
   line-height: 1.5;
 
   span {
@@ -35,12 +37,12 @@
       &::after {
         content: "|";
         color: $white;
-        margin: 0 5px;
+        @include rem(margin, 0px 5px);
       }
     }
   }
 
   p {
-    margin-top: 15px;
+    @include rem(margin-top, 15px);
   }
 }
