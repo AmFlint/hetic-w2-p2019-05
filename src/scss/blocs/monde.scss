@@ -29,32 +29,34 @@
     font-family: "AnticDidone";
     color: $white;
     text-align: center;
-
     @include tablet-landscape {
       text-align: right;
       padding: 0 0;
       width: 40%;
     }
-    h2 {
-      @include flexbox();
-      @include flex-direction(column);
-        margin: 40px 0;
-        font-size: $font-title;
-        font-family: "BerkshireSwash";
-        font-weight: 700;
-        @include tablet-landscape {
-            font-size: 30px;
-            margin-top: 0;
-        }
-        span {
-            font-family: "AnticDidone";
-            font-weight: 400;
-        }
+  }
+
+  .wrapper-info__title {
+    @include flexbox();
+    @include flex-direction(column);
+    margin: 40px 0;
+    font-size: $font-title;
+    font-family: "BerkshireSwash";
+    font-weight: 700;
+    @include tablet-landscape {
+      font-size: 30px;
+      margin-top: 0;
     }
-    p {
-        font-size: 17px;
-        line-height: 1.47;
-        margin-bottom: 30px;
-    }
+  }
+
+  .wrapper-info__subtitle {
+    font-family: "AnticDidone";
+    font-weight: 400;
+  }
+
+  .wrapper-info__desc {
+    font-size: 17px;
+    line-height: 1.47;
+    margin-bottom: 30px;
   }
 }

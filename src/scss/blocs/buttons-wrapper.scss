@@ -15,7 +15,9 @@
 }
 
 .buttons-wrapper__btn {
-  padding: 12px 5px;
+  @include flexbox();
+  @include align-items(center);
+  padding: 12px 10px;
   border: none;
   border-radius: 5px;
   text-align: center;
@@ -28,16 +30,14 @@
 }
 
 .buttons-wrapper__btn_light {
-  width: 12rem;
   background: $background-button;
 }
 
 .buttons-wrapper__btn_dark {
   // not displayed on mobile
   display: none;
-  width: 19.5rem;
-  background: url('../img/button-background.jpg') center no-repeat;
-  background-size: 120%;
+  background: url('../img/button-background.jpg');
+  @include bcg;
   text-transform: uppercase;
 
   @include  desktop() {
@@ -50,8 +50,8 @@
   display: inline-block;
   width: 80%;
   margin: 0 auto;
-  background: url('../img/button-background.jpg') center no-repeat;
-  background-size: 120%;
+  background: url('../img/button-background.jpg');
+  @include bcg;
   text-transform: uppercase;
   @include  tablet-portrait() {
     width: 253px;
