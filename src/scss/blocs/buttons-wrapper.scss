@@ -1,6 +1,17 @@
 .buttons-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     font-family: $Comfortaa;
+
+    @include tablet-landscape {
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+    }
 }
 
 .buttons-wrapper__btn {
@@ -12,7 +23,8 @@
     letter-spacing: 0px;
     color: $font-light;
     text-transform: uppercase;
-    box-shadow: 0 .1rem .2rem 0 #000000;
+    -webkit-box-shadow: 0 .1rem .2rem 0 #000000;
+            box-shadow: 0 .1rem .2rem 0 #000000;
 }
 
 .buttons-wrapper__btn_light {
