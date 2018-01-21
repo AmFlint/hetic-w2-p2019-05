@@ -4,15 +4,31 @@
   background-image: url("../img/bg-zelda.jpg");
   @include bcg;
   color: $white;
+  height: 100vh;
+  width: 100%;
 
+  @media only screen and (max-height: 550px) {
+    height: auto;
+  }
 }
 
 .intro__ctn {
-  @include rem(padding, 20px 15px 50px 15px);
   background: rgba(0, 0, 0, 0.08);
+  @include flexbox();
+  @include flex-direction(column);
+  @include justify-content(center);
+  height: 100%;
+  width: 100%;
+  padding: 0 15px;
+
+  @media only screen and (max-height: 550px) {
+    @include rem(padding, 20px 15px 50px 15px);
+  }
 
   @include tablet-landscape {
-    @include rem(padding, 141px 0px 0px 0px);
+    @media only screen and (max-height: 550px) {
+      @include rem(padding, 141px 0px 0px 0px);
+    }
   }
 }
 
@@ -28,14 +44,23 @@
 }
 
 .intro__ctn__title {
-  margin: 20px 0 77px 0;
+  @include rem(margin, 0px  0px 77px 0px);
   font-family: "AnticDidone";
   font-size: 32px;
   font-weight: 700;
 
+  @media only screen and (max-height: 550px) {
+    @include rem(margin, 20px 0px 77px 0px);
+  }
+
   @include tablet-landscape {
-    @include rem(margin, 20px 0px 200px 0px);
     @include rem(font-size, 55px);
+  }
+
+  @include tablet-landscape {
+    @media only screen and (max-height: 550px) {
+      @include rem(margin, 20px 0px 200px 0px);
+    }
   }
 
   span {
@@ -43,16 +68,29 @@
   }
 }
 
-.intro__ctn__invitation {
-  @include rem(margin-top, 74px);
-  font-family: "AnticDidone";
-  @include rem(font-size, 18px);
-}
+.intro__ctn__bottom-ctn {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  @media only screen and (max-height: 550px) {
+    position: inherit;
+    -webkit-transform: inherit;
+            transform: inherit;
+  }
 
-.intro__ctn__scroll-line {
-  margin: 0 auto;
-  @include rem(margin-top, 15px);
-  @include rem(height, 40px);
-  @include rem(width, 1px);
-  background: $white;
+  h3 {
+    @include rem(margin-top, 74px);
+    font-family: "AnticDidone";
+    @include rem(font-size, 18px);
+  }
+
+  div {
+    margin: 0 auto;
+    @include rem(margin-top, 15px);
+    @include rem(height, 40px);
+    @include rem(width, 1px);
+    background: $white;
+  }
 }
