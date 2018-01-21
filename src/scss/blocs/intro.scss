@@ -2,7 +2,8 @@
   position: relative;
   @include rem(padding, 20px 15px 50px 15px);
   text-align: center;
-  background: $black;
+  background-image: url("../img/bg-zelda.jpg");
+  @include bcg;
   color: $white;
 
   @include tablet-landscape {
