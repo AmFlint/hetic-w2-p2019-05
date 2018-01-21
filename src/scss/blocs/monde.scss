@@ -34,7 +34,7 @@
   .wrapper-info {
     padding: 0 15px;
     font-family: "AnticDidone";
-    color: white;
+    color: $white;
     text-align: center;
 
     @include tablet-landscape {
@@ -60,6 +60,7 @@
         }
         span {
             font-size: 28px;
+            font-family: "AnticDidone";
             font-weight: 400;
         }
     }

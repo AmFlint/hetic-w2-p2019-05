@@ -1,3 +1,59 @@
-footer {
-  background-color: yellow;
+.footer {
+  text-align: center;
+  background-image: url("../img/bg-motifs-noir.png");
+  background-size: cover;
+  background-position: center;
+  padding: 50px 15px 93px 15px;
+  color: $white;
+  @include tablet-landscape {
+    padding: 76px 0 71px 0;
+  }
+}
+
+.footer__logo {
+  margin-bottom: 29px;
+}
+
+.footer__wrapper-socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+  @include tablet-portrait {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 80px;
+  }
+}
+
+.footer__mentions {
+  font-size: 12px;
+  line-height: 1.5;
+
+  span {
+    color: $gold;
+    &:first-child {
+      &::after {
+        content: "|";
+        color: $white;
+        margin: 0 5px;
+      }
+    }
+  }
+
+  p {
+    margin-top: 15px;
+  }
 }

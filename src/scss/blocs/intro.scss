@@ -1,0 +1,47 @@
+.intro {
+  position: relative;
+  padding: 20px 15px 0 15px;
+  text-align: center;
+  background: $black;
+  color: $white;
+  @include tablet-landscape {
+    padding: 141px 0 0 0;
+  }
+}
+
+.intro__logo {
+  margin-bottom: 50px;
+  @include tablet-landscape {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+  }
+}
+
+.intro__title {
+  margin:  20px 0 200px 0;
+  font-family: "AnticDidone";
+  font-size: 32px;
+  font-weight: 700;
+  @include tablet-landscape {
+    font-size: 55px;
+  }
+
+  span {
+    font-family: "BerkshireSwash";
+  }
+}
+
+.intro__invitation {
+  margin-top: 74px;
+  font-family: "AnticDidone";
+  font-size: 18px;
+}
+
+.intro__scroll-line {
+  margin: 0 auto;
+  margin-top: 15px;
+  height: 40px;
+  width: 1px;
+  background: $white;
+}

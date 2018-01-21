@@ -1,0 +1,44 @@
+.share {
+  padding: 100px 15px;
+  text-align: center;
+  font-family: "AnticDidone";
+  color: $black;
+
+  @include tablet-landscape {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 116px 250px;
+  }
+
+  @include desktop {
+    width: 70%;
+  }
+}
+
+.share__desc {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  @include tablet-landscape {
+    margin-bottom: 0;
+    font-size: 18px;
+    text-align: left;
+    margin-right: 30px;
+  }
+}
+
+.share__btn {
+  width: 172px;
+  @include tablet-landscape {
+    width: 156px;
+  }
+}
