@@ -1,6 +1,6 @@
 .intro {
   position: relative;
-  padding: 20px 15px 0 15px;
+  padding: 20px 15px 50px 15px;
   text-align: center;
   background: $black;
   color: $white;
@@ -19,11 +19,12 @@
 }
 
 .intro__title {
-  margin:  20px 0 200px 0;
+  margin: 20px 0 77px 0;
   font-family: "AnticDidone";
   font-size: 32px;
   font-weight: 700;
   @include tablet-landscape {
+    margin:  20px 0 200px 0;
     font-size: 55px;
   }
 
