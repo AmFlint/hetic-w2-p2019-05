@@ -12,7 +12,6 @@
     -ms-flex-pack: end;
     justify-content: flex-end;
   }
-}
 
 .buttons-wrapper__btn {
   @include flexbox();
@@ -46,14 +45,16 @@
   }
 }
 
-.buttons-wrapper__btn--darkBig {
-  display: inline-block;
-  width: 80%;
-  margin: 0 auto;
-  background: url('../img/button-background.jpg');
-  @include bcg;
-  text-transform: uppercase;
-  @include  tablet-portrait() {
-    width: 253px;
-  }
+
+    .buttons-wrapper__btn--darkBig {
+        display: inline-block;
+        width: 80%;
+        margin: 0 auto;
+        background: url('../img/button-background.jpg');
+        @include bcg;
+        text-transform: uppercase;
+        @include  tablet-portrait() {
+            width: 253px;
+        }
+    }
 }
