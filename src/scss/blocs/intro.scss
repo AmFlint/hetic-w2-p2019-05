@@ -22,7 +22,7 @@
   padding: 0 15px;
 
   @media only screen and (max-height: 550px) {
-    @include rem(padding, 20px 15px 50px 15px);
+    @include rem(padding, 70px 15px 0px 15px);
   }
 
   @include tablet-landscape {
@@ -33,20 +33,32 @@
 }
 
 .intro__ctn__logo {
-  z-index: 2;
-  margin-bottom: 50px;
+  position: absolute;
+  @include rem(top, 30px);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+
+  @media only screen and (max-height: 550px) {
+    position: inherit;
+    -webkit-transform: none;
+    transform: none;
+    @include rem(margin-bottom, 30px);
+  }
 
   @include tablet-landscape {
     position: absolute;
     @include rem(top, 40px);
     @include rem(left, 40px);
+    -webkit-transform: none;
+    transform: none;
   }
 }
 
 .intro__ctn__title {
   @include rem(margin, 0px  0px 77px 0px);
   font-family: "AnticDidone";
-  font-size: 32px;
+  @include rem(font-size, 32px);
   font-weight: 700;
 
   @media only screen and (max-height: 550px) {
@@ -55,6 +67,7 @@
 
   @include tablet-landscape {
     @include rem(font-size, 55px);
+    @include rem(margin, 0px  0px 200px 0px);
   }
 
   @include tablet-landscape {
@@ -73,11 +86,11 @@
   bottom: 0;
   left: 50%;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   @media only screen and (max-height: 550px) {
     position: inherit;
     -webkit-transform: inherit;
-            transform: inherit;
+    transform: inherit;
   }
 
   h3 {
