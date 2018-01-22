@@ -1,85 +1,50 @@
-.histoire-decouvrir {
-    background: RED;
-    padding:0 15px;
-    margin:  0 auto;
-    text-align: center;
-    color: #fff;
-    font-family: "AnticDidone";
-    @media screen and (min-width: 1024px ){
-        text-align: left;
-    }
-    @media screen and (min-width: 1440px ){
-        padding: 107px 250px;
-    }
-    .wrapper-info {
-        padding: 100px 0;
-        @media screen and (min-width: 1024px ){
-            padding: 0;
-        }
-        h2 {
-            text-align: center;
-            font-size: 28px;
-            font-family: "BerkshireSwash";
-            font-weight: 700;
-            @media screen and (min-width: 1024px ){
-                text-align: left;
-                font-size: 30px;
-                margin-top: 0;
-            }
-            .style-title {
-                font-size: 28px;
-                font-family: "AnticDidone";
-                font-weight: 400;
-            }
-        }
-        p {
-            font-size: 17px;
-            line-height: 1.47;
-            @media screen and (min-width: 1024px ){
-                width: 450px;
-                margin: 20px 0;
-            }
-        }
-        @media screen and (min-width: 1024px ){
-            width: 50%;
-        }
-    }
-    .discover {
-        width: 129px;
-        height: 44px;
-        font-family: 'Roboto';
-        font-size: 17.6px;
-        letter-spacing: 0px;
-        text-align: center;
-        color: #fff;
-        background: #b99f65;
-        border: none;
-        border-radius: 5px;
-        text-transform: uppercase;
-        @media screen and (min-width: 1024px ){
-             
-        }
-    }
-    .command {
-        display: none;
-        width: 196px;
-        height: 44px;
-        font-family: 'Roboto';
-        font-size: 17.6px;
-        letter-spacing: 0px;
-        text-align: center;
-        color: #fff;
-        background: #940606;
-        border: none;
-        border-radius: 5px;
-        text-transform: uppercase;
-        @media screen and (min-width: 1024px ){
-            display: block;
-            margin-left: 10px;
-        }
-    }
-}
+.histoire {
+    background: url('../img/backgrounds/bg-motifs-bleu.png'); 
+    @include bcg;
+    @include rem(padding, 100px 0px);
 
-.wrapper-buttons {
-    display: flex;
+    @include tablet-landscape {
+        @include flexbox();
+        @include justify-content(space-between);
+        @include align-items(center);
+        @include rem(padding, 112px 15px);
+      }
+    
+      @include desktop {
+        @include rem(padding, 112px 250px);
+      }
+    .wrapper-info {
+        @include rem(padding, 0 15px);
+        font-family: "AnticDidone";
+        color: $white;
+        text-align: center;
+        @include tablet-landscape {
+          text-align: left;
+          padding: 0 0;
+          width: 40%;
+        }
+    }
+    .wrapper-info__title {
+        @include flexbox();
+        @include flex-direction(column);
+        @include rem(margin, 40px 0px);
+        font-size: $font-title;
+        font-family: "BerkshireSwash";
+        font-weight: 700;
+        @include tablet-landscape {
+          @include rem(font-size, 30px);
+          margin-top: 0;
+        }
+      }
+    
+    .wrapper-info__subtitle {
+    font-family: "AnticDidone";
+    font-weight: 400;
+    }
+
+    .wrapper-info__desc {
+    @include rem(font-size, 17px);
+    line-height: 1.47;
+    @include rem(margin-bottom, 30px);
+    }
 }

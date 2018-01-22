@@ -1,13 +1,10 @@
-section.ennemis-affronter
+section.ennemis
     div.wrapper-info
-        h2 Des ennemis
+        h2.wrapper-info__title Des ennemis
             |
             br
-            span.style-title à affrontrer
-        p Quelque soit votre arme favorite, croisez le fer avec les créatures qui peuplent ce royaume désolé, et prouvez votre valeur au combat. Plus que d'une épée, vous devrez vous armer de courage et de bravoure.
-        .wrapper-buttons-ennemis
-            button.discover Découvrir
-            button.command Commander le jeu
-    .video-zelda-cbt 
-        video
- 
+            span.wrapper-info__subtitle à affrontrer
+        p.wrapper-info__desc Quelque soit votre arme favorite, croisez le fer avec les créatures qui peuplent ce royaume désolé, et prouvez votre valeur au combat. Plus que d'une épée, vous devrez vous armer de courage et de bravoure.
+        include ../blocs/buttons-wrapper.pug
+    .video
+        video(src="")
