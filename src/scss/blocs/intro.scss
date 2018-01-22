@@ -19,7 +19,7 @@
   @include justify-content(center);
   height: 100%;
   width: 100%;
-  padding: 0 15px;
+  @include rem(padding, 0px 15px);
 
   @media only screen and (max-height: 550px) {
     @include rem(padding, 70px 15px 0px 15px);
@@ -87,6 +87,7 @@
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
+
   @media only screen and (max-height: 550px) {
     position: inherit;
     -webkit-transform: inherit;

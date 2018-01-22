@@ -17,13 +17,24 @@
 .footer__wrapper-socials {
   @include flexbox();
   @include flex-direction(column);
-  @include align-items(center);
+  @include align-items(top);
   @include rem(margin-bottom, 50px);
 
   @include tablet-portrait {
     @include flex-direction(row);
     @include justify-content(center);
     @include rem(margin-bottom, 80px);
+  }
+
+  div {
+    @include rem(margin-bottom, 20px);
+    @include tablet-portrait {
+      @include rem(margin-right, 15px);
+      margin-bottom: 0;
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
   }
 }
 
