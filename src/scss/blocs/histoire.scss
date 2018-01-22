@@ -19,7 +19,7 @@
         color: $white;
         text-align: center;
         @include tablet-landscape {
-          text-align: right;
+          text-align: left;
           padding: 0 0;
           width: 40%;
         }
