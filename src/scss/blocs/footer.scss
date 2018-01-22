@@ -1,3 +1,48 @@
-footer {
-  background-color: yellow;
+.footer {
+  text-align: center;
+  @include bcg;
+  background-image: url("../img/bg-motifs-noir.png");
+  @include rem(padding, 50px 15px 93px 15px);
+  color: $white;
+
+  @include tablet-landscape {
+    @include rem(padding, 76px 0px 71px 0px);
+  }
+}
+
+.footer__logo {
+  @include rem(margin-bottom, 29px);
+}
+
+.footer__wrapper-socials {
+  @include flexbox();
+  @include flex-direction(column);
+  @include align-items(center);
+  @include rem(margin-bottom, 50px);
+
+  @include tablet-portrait {
+    @include flex-direction(row);
+    @include justify-content(center);
+    @include rem(margin-bottom, 80px);
+  }
+}
+
+.footer__mentions {
+  @include rem(font-size, 12px);
+  line-height: 1.5;
+
+  span {
+    color: $gold;
+    &:first-child {
+      &::after {
+        content: "|";
+        color: $white;
+        @include rem(margin, 0px 5px);
+      }
+    }
+  }
+
+  p {
+    @include rem(margin-top, 15px);
+  }
 }

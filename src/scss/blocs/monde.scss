@@ -1,0 +1,63 @@
+.monde {
+  background-image: url("../img/bg-motifs-noir.png");
+  @include bcg;
+  @include rem(padding, 100px 0px);
+
+  @include tablet-landscape {
+    @include flexbox();
+    @include justify-content(space-between);
+    @include align-items(center);
+    @include rem(padding, 112px 15px);
+  }
+
+  @include desktop {
+    @include rem(padding, 112px 250px);
+  }
+
+  .video {
+    @include tablet-landscape {
+      width: 50%;
+    }
+
+    video {
+      height: auto;
+      width: 100%;
+    }
+  }
+
+  .wrapper-info {
+    @include rem(padding, 0 15px);
+    font-family: "AnticDidone";
+    color: $white;
+    text-align: center;
+    @include tablet-landscape {
+      text-align: right;
+      padding: 0 0;
+      width: 40%;
+    }
+  }
+
+  .wrapper-info__title {
+    @include flexbox();
+    @include flex-direction(column);
+    @include rem(margin, 40px 0px);
+    font-size: $font-title;
+    font-family: "BerkshireSwash";
+    font-weight: 700;
+    @include tablet-landscape {
+      @include rem(font-size, 30px);
+      margin-top: 0;
+    }
+  }
+
+  .wrapper-info__subtitle {
+    font-family: "AnticDidone";
+    font-weight: 400;
+  }
+
+  .wrapper-info__desc {
+    @include rem(font-size, 17px);
+    line-height: 1.47;
+    @include rem(margin-bottom, 30px);
+  }
+}

@@ -1,5 +1,6 @@
 // Import partials
 @import 'partials/_reset';
+@import 'partials/_layouts';
 @import 'partials/_fonts';
 @import 'partials/_colors';
 @import 'partials/_screen';
@@ -8,10 +9,13 @@
 @import 'blocs/header';
 @import 'blocs/footer';
 @import 'blocs/buttons-wrapper';
+@import 'blocs/intro';
+@import 'blocs/monde';
 @import 'blocs/consoles';
 @import 'blocs/histoire';
 @import 'blocs/personnages';
 @import 'blocs/ennemis';
+@import 'blocs/share';
 
 @font-face {
  font-family: "Roboto";
