@@ -1,6 +1,5 @@
 .personnages {
     background: url('../img/backgrounds/bg-motifs-blanc.png'); 
-    color: $black !important;
     @include bcg;
     @include rem(padding, 100px 0px);
 
@@ -15,7 +14,6 @@
         @include rem(padding, 112px 250px);
       }
     .wrapper-info {
-        color: $black;
         @include rem(padding, 0 15px);
         font-family: "AnticDidone";
         color: $white;
