@@ -36,7 +36,8 @@
 .buttons-wrapper__btn_dark {
   // not displayed on mobile
   display: none;
-  background: url('../img/button-background.jpg');
+  background: url('../img/button-background.jpg') center no-repeat;
+  background-size: 120%;
   @include bcg;
   text-transform: uppercase;
 
@@ -50,7 +51,8 @@
   display: inline-block;
   width: 80%;
   margin: 0 auto;
-  background: url('../img/button-background.jpg');
+  background: url('../img/button-background.jpg') center no-repeat;
+  background-size: 120%;
   @include bcg;
   @include rem(font-size, 17.6px);
   text-transform: uppercase;
