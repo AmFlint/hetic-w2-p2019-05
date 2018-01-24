@@ -48,3 +48,9 @@
     @include rem(margin-bottom, 30px);
     }
 }
+
+.wrapper-info {
+  &:nth-child(3){
+    color:#413f3f;
+  }
+}
