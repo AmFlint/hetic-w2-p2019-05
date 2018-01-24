@@ -1,0 +1,11 @@
+.environment {
+    // Background nature image
+    background-image: url("../img/backgrounds/bg-nature.jpg");
+    background-size: cover;
+    background-position-x: 70%;
+
+    @include desktop() {
+        height: 58.7rem;
+    }
+}
+
