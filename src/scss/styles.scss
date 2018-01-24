@@ -9,6 +9,8 @@
 @import 'blocs/header';
 @import 'blocs/footer';
 @import 'blocs/buttons-wrapper';
+@import 'blocs/wrapper-info';
+@import 'blocs/wrapper-content';
 @import 'blocs/intro';
 @import 'blocs/monde';
 @import 'blocs/consoles';
@@ -16,6 +18,7 @@
 @import 'blocs/personnages';
 @import 'blocs/ennemis';
 @import 'blocs/share';
+@import 'blocs/environment';
 
 @font-face {
  font-family: "Roboto";

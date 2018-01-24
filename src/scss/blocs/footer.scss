@@ -11,7 +11,13 @@
 }
 
 .footer__logo {
+  height: auto;
+  @include rem(width, 125px);
   @include rem(margin-bottom, 29px);
+
+  @include tablet-landscape {
+    @include rem(width, 100px);
+  }
 }
 
 .footer__wrapper-socials {
@@ -44,7 +50,7 @@
 
   span {
     color: $gold;
-    &:first-child {
+    &:first-of-type {
       &::after {
         content: "|";
         color: $white;
