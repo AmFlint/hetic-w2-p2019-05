@@ -2,7 +2,8 @@
   position: relative;
   text-align: center;
   background-image: url("../img/bg-zelda.jpg");
-  @include bcg;
+  background-size: cover;
+  background-position: center;
   color: $white;
   height: 100vh;
   width: 100%;
