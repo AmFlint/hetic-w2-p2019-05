@@ -33,3 +33,15 @@
     line-height: 1.47;
     @include rem(margin-bottom, 30px);
 }
+
+.wrapper-info__left {
+    @include tablet-landscape {
+        text-align: left;
+        padding: 0 0;
+        width: 40%;
+    }
+}
+
+.wrapper-info__histoire {
+
+}
