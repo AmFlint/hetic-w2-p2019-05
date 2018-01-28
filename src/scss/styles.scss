@@ -1,9 +1,9 @@
-// Import partials
-@import 'partials/_reset';
-@import 'partials/_layouts';
-@import 'partials/_fonts';
-@import 'partials/_colors';
-@import 'partials/_screen';
+// Import global
+@import 'global/_reset';
+@import 'global/_layouts';
+@import 'global/_fonts';
+@import 'global/_colors';
+@import 'global/_screen';
 
 // Import blocs
 @import 'blocs/header';
@@ -19,33 +19,3 @@
 @import 'blocs/ennemis';
 @import 'blocs/share';
 @import 'blocs/environment';
-
-@font-face {
- font-family: "Roboto";
- src: url("../fonts/Roboto-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "AnticDidone";
-  src: url("../fonts/AnticDidone-Regular.ttf") format("truetype");
- }
- @font-face {
-  font-family: "BerkshireSwash";
-  src: url("../fonts/BerkshireSwash-Regular.ttf") format("truetype");
- }
-
-h1 {
-  color: brown;
-  font-family: "Roboto", Arial;
-
-  &:hover {
-    color: green;
-  }
-}
-
-html {
-  font-family: 'Roboto', sans-serif;
-}
-
-a, a:hover, a:visited {
-  text-decoration: none;
-}
