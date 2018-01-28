@@ -32,7 +32,7 @@
   }
 }
 
-.intro__ctn__logo {
+.intro__logo {
   position: absolute;
   @include rem(top, 30px);
   left: 50%;
@@ -55,7 +55,7 @@
   }
 }
 
-.intro__ctn__title {
+.intro__title {
   @include rem(margin, 0px  0px 77px 0px);
   font-family: "AnticDidone";
   @include rem(font-size, 32px);
@@ -81,7 +81,7 @@
   }
 }
 
-.intro__ctn__bottom-ctn {
+.intro__bottom-ctn {
   position: absolute;
   bottom: 0;
   left: 50%;
