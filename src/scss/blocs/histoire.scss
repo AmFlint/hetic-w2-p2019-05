@@ -21,7 +21,17 @@
   position: absolute;
   top: 0;
   width: 150%;
+  @include desktop {
+    width: 100%;
+    left: 660px;
+  }
     img {
       width: 100%;
+      @include tablet-portrait {
+        width: 40%;
+      }
+      @include tablet-landscape {
+        width: 40%;
+      }
     }
 }
