@@ -1,4 +1,7 @@
 .personnages {
+    position: relative;
+    overflow: hidden;
+    height:  770px;
     background: url('../img/backgrounds/bg-motifs-blanc.png'); 
     @include bcg;
 
@@ -11,4 +14,22 @@
   &:nth-child(3){
     color:#413f3f;
   }
+}
+
+.wrapper-img__left {
+  position: absolute;
+  top:50%;
+  left: -162px;
+  transform: translateY(-50%);
+    img {
+
+    }
+}
+.wrapper-img__right {
+  position: absolute;
+  bottom: 0;
+  left: 170px;
+    img {
+
+    }
 }
