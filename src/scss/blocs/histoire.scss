@@ -1,4 +1,6 @@
 .histoire {
+  position: relative;
+  overflow: hidden;
   background: url('../img/backgrounds/bg-motifs-bleu.png'); 
   @include bcg;
   @include rem(padding, 100px 0px);
@@ -13,4 +15,23 @@
   @include desktop {
     @include rem(padding, 112px 250px);
   }
+}
+
+.wrapper-img__link {
+  position: absolute;
+  top: 0;
+  width: 150%;
+  @include desktop {
+    width: 100%;
+    left: 660px;
+  }
+    img {
+      width: 100%;
+      @include tablet-portrait {
+        width: 40%;
+      }
+      @include tablet-landscape {
+        width: 40%;
+      }
+    }
 }

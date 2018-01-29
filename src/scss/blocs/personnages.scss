@@ -1,4 +1,7 @@
 .personnages {
+    position: relative;
+    overflow: hidden;
+    height:  770px;
     background: url('../img/backgrounds/bg-motifs-blanc.png'); 
     @include bcg;
 
@@ -10,5 +13,23 @@
 .wrapper-info {
   &:nth-child(3){
     color:#413f3f;
+  }
+}
+
+.wrapper-img__left {
+  position: absolute;
+  top:50%;
+  left: -162px;
+  transform: translateY(-50%);
+  @include tablet-portrait {
+    left: 0;
+  }
+}
+.wrapper-img__right {
+  position: absolute;
+  right: -115px;
+  transform: translateY(125%);
+  @include tablet-portrait {
+    right: 0;
   }
 }

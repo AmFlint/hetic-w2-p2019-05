@@ -10,10 +10,10 @@ const webpack = require('webpack');
 const isProd = process.env.NODE_ENV === 'production';
 
 // Css Compilation Configuration
-const cssDev = ['style-loader', 'css-loader', 'sass-loader']
+const cssDev = ['style-loader', 'css-loader', 'sass-loader', 'postcss-loader'];
 const cssProd = ExtractTextPlugin.extract({
     fallback: 'style-loader',
-    use: ['css-loader', 'sass-loader']
+    use: ['css-loader', 'sass-loader', 'postcss-loader']
 });
 const cssConf = isProd ? cssProd : cssDev;
 
