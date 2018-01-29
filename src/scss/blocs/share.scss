@@ -1,11 +1,15 @@
 .share {
-  @include rem(padding, 100px 15px);
   background-image: url("../img/backgrounds/bg-dragon2.jpg");
+  background-size: 345% !important;
+  background-repeat: no-repeat;
+  @include rem(padding, 100px 15px);
   @include bcg;
   text-align: center;
   font-family: "AnticDidone";
   color: $black;
-
+  @include tablet-portrait {
+    background-size: cover !important;
+  }
   @include desktop {
     @include flexbox();
     @include justify-content(space-between);
