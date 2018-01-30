@@ -23,9 +23,15 @@
 }
 
 .consoles-btn--order {
+    font-family: $Comfortaa;
     display: block;
-    max-width: 85%;
+    max-width: 90%;
     margin: 0 auto;
     text-align: center;
     padding: 1.2rem 0;
+}
+
+.consoles-btn--amiibo {
+    max-width: 80%;
+    margin-top: 2rem;
 }
