@@ -17,12 +17,12 @@
 .buttons-wrapper__btn {
   @include flexbox();
   @include align-items(center);
-  padding: 12px 10px;
+  padding: 1.2rem 1rem;
   border: none;
-  border-radius: 5px;
+  border-radius: .5rem;
   text-align: center;
   font-size: $font-button-discover;
-  letter-spacing: 0px;
+  letter-spacing: 0;
   color: $font-light;
   text-transform: uppercase;
   -webkit-box-shadow: 0 .1rem .2rem 0 #000000;
@@ -54,11 +54,11 @@
   background: url('../img/button-background.jpg') center no-repeat;
   background-size: 120%;
   @include bcg;
-  @include rem(font-size, 17.6px);
+  font-size: $font-button-order;
   text-transform: uppercase;
   @include  tablet-portrait() {
-    width: 253px;
-    @include rem(font-size, 20px);
+    width: 25.3rem;
+    font-size: $font-consoles;
   }
 }
 

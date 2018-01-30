@@ -23,9 +23,23 @@
     }
 }
 
+.wrapper-info__title--sticky {
+    margin: 0 0 4rem;
+}
+
 .wrapper-info__subtitle {
     font-family: "AnticDidone";
     font-weight: 400;
+}
+
+.wrapper-info__subtitle--amiibo {
+    margin-top: 2rem;
+    font-size: $font-consoles;
+    line-height: 150%;
+}
+
+.wrapper-info__desc--light {
+    color: $font-light;
 }
 
 .wrapper-info__desc {
@@ -42,6 +56,8 @@
     }
 }
 
-.wrapper-info__histoire {
-
+.wrapper-info--amiibo {
+    position: relative;
+    z-index: 2;
+    color: $font-tertiary;
 }

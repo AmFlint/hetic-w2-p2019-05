@@ -1,0 +1,10 @@
+.consoles {
+    background-image: url("../img/backgrounds/bg-falaise.jpg");
+    background-size: cover;
+    background-position-x: 60%;
+    height: 100vh;
+
+    @include desktop() {
+        padding: 11.2rem 25rem;
+    }
+}

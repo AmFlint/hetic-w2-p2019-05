@@ -13,16 +13,15 @@
     @include desktop {
       @include rem(padding, 112px 250px);
     }
-  
-    .video {
-      @include tablet-landscape {
-        width: 50%;
-      }
-  
-      video {
-        padding-top: 50px;
-        height: auto;
-        width: 100%;
-      }
-    }
-} 
+}
+.video {
+  @include tablet-landscape {
+    width: 50%;
+  }
+
+  video {
+    padding-top: 50px;
+    height: auto;
+    width: 100%;
+  }
+}

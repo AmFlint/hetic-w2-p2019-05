@@ -1,0 +1,33 @@
+.amiibo-slider {
+    margin-top: 4rem;
+}
+
+.amiibo-slider__figure-title {
+    font-family: "BerkshireSwash";
+    font-size: $font-title;
+    text-align: center;
+    color: $font-tertiary;
+}
+
+.amiibo-slider__figure-image {
+    display: block;
+    max-width: 50%;
+    margin: 2rem auto;
+}
+
+.amiibo-slider__selector {
+    position: relative;
+    height: 0.23rem;
+    margin-bottom: 3rem;
+    background: #817F7F;
+}
+
+.amiibo-slider__selector-cursor {
+    position: absolute;
+    top: -.2rem;
+    left: 4rem;
+    width: 6rem;
+    height: 0.7rem;
+    background: $gold;
+    border-radius: 1rem;
+}
