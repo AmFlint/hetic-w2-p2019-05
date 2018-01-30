@@ -1,0 +1,29 @@
+.amiibo {
+    position: relative;
+    overflow: hidden;
+    background: #060000; 
+
+    @include rem(padding, 100px 0px);
+}
+
+.wrapper-img--amiibo {
+    z-index: 0; 
+    opacity: .3;
+    position: absolute;
+    top: 0;
+    left: calc(-65%);
+    width: 240%;
+    @include desktop {
+      width: 100%;
+      left: 660px;
+    }
+      img {
+        width: 100%;
+        @include tablet-portrait {
+          width: 40%;
+        }
+        @include tablet-landscape {
+          width: 40%;
+        }
+      }
+  }
