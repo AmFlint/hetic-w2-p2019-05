@@ -18,15 +18,15 @@
     @include justify-content(center);
     height: 100%;
     width: 100%;
-    @include rem(padding, 0rem 1.5rem);
+    padding: 0 1.5rem;
   
     @media only screen and (max-height: 55rem) {
-      @include rem(padding, 7rem 1.5rem 0rem 1.5rem);
+      padding: 7rem 1.5rem 0 1.5rem;
     }
   
     @include tablet-landscape {
       @media only screen and (max-height: 550px) {
-        @include rem(padding, 14.1rem 0rem 0rem 0rem);
+        padding: 14.1rem 0 0 0;
       }
     }
   }
@@ -34,7 +34,7 @@
 
 .intro__logo {
   position: absolute;
-  @include rem(top, 3rem);
+  top: 3rem;
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -43,36 +43,36 @@
     position: inherit;
     -webkit-transform: none;
     transform: none;
-    @include rem(margin-bottom, 3rem);
+    margin-bottom: 3rem;
   }
 
   @include tablet-landscape {
     position: absolute;
-    @include rem(top, 4rem);
-    @include rem(left, 4rem);
+    top: 4rem;
+    left: 4rem;
     -webkit-transform: none;
     transform: none;
   }
 }
 
 .intro__title {
-  @include rem(margin, 0rem  0rem 7.7rem 0rem);
+  margin: 0 0 7.7rem 0;
   font-family: "AnticDidone";
-  @include rem(font-size, 3.2rem);
+  font-size: $font-main-title;
   font-weight: 700;
 
   @media only screen and (max-height: 55rem) {
-    @include rem(margin, 2rem 0rem 7.7rem 0rem);
+    margin: 2rem 0 7.7rem;
   }
 
   @include tablet-landscape {
-    @include rem(font-size, 5.5rem);
-    @include rem(margin, 0rem  0rem 20rem 0rem);
+    font-size: $font-main-title-desktop;
+    margin: 0 0 20rem;
   }
 
   @include tablet-landscape {
     @media only screen and (max-height: 55rem) {
-      @include rem(margin, 2rem 0rem 20rem 0rem);
+      margin: 2rem 0 20rem;
     }
   }
 
@@ -95,16 +95,16 @@
   }
 
   h3 {
-    @include rem(margin-top, 7.4rem);
+    margin-top: 7.4rem;
     font-family: "AnticDidone";
-    @include rem(font-size, 1.8rem);
+    font-size: $font-button-order;
   }
 
   div {
     margin: 0 auto;
-    @include rem(margin-top, 1.5rem);
-    @include rem(height, 4rem);
-    @include rem(width, 0.1rem);
+    margin-top: 1.5rem;
+    height: 4rem;
+    width: .1rem;
     background: $white;
   }
 }

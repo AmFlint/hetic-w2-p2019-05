@@ -1,8 +1,9 @@
+@import 'global/_screen';
+@import 'global/_mixins';
 @import 'global/_reset';
 @import 'global/_layouts';
 @import 'global/_fonts';
 @import 'global/_colors';
-@import 'global/_screen';
 
 @import 'blocs/header';
 @import 'blocs/footer';

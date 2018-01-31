@@ -2,21 +2,21 @@
   text-align: center;
   @include bcg;
   background-image: url("../img/bg-motifs-noir.png");
-  @include rem(padding, 5rem 1.5rem 9.3rem 1.5rem);
+  padding: 5rem 1.5rem 9.3rem;
   color: $white;
 
   @include tablet-landscape {
-    @include rem(padding, 7.6rem 0rem 7.1rem 0rem);
+    padding: 7.6rem 0 7.1rem;
   }
 }
 
 .footer__logo {
   height: auto;
-  @include rem(width, 12.5rem);
-  @include rem(margin-bottom, 2.9rem);
+  width: 12.5rem;
+  margin-bottom: 2.9rem;
 
   @include tablet-landscape {
-    @include rem(width, 10rem);
+    width: 10rem;
   }
 }
 
@@ -24,18 +24,18 @@
   @include flexbox();
   @include flex-direction(column);
   @include align-items(top);
-  @include rem(margin-bottom, 5rem);
+  margin-bottom: 5rem;
 
   @include tablet-portrait {
     @include flex-direction(row);
     @include justify-content(center);
-    @include rem(margin-bottom, 8rem);
+    margin-bottom: 8rem;
   }
 
   div {
-    @include rem(margin-bottom, 2rem);
+    margin-bottom: 2rem;
     @include tablet-portrait {
-      @include rem(margin-right, 1.5rem);
+      margin-right: 1.5rem;
       margin-bottom: 0;
       &:last-of-type {
         margin-right: 0;
@@ -45,7 +45,7 @@
 }
 
 .footer__mentions {
-  @include rem(font-size, 1.2rem);
+  font-size: $font-mentions;
   line-height: 1.5;
 
   span {
@@ -54,12 +54,12 @@
       &::after {
         content: "|";
         color: $white;
-        @include rem(margin, 0rem 0.5rem);
+        margin: 0 .5rem;
       }
     }
   }
 
   p {
-    @include rem(margin-top, 1.5rem);
+    margin-top: 1.5rem;
   }
 }

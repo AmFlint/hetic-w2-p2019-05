@@ -1,6 +1,6 @@
 .wrapper-content {
     height: 100%;
-    @include rem(padding, 10rem 0rem);
+    padding: 10rem 0;
 }
 
 .wrapper-content__darkTop {
