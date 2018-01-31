@@ -1,6 +1,7 @@
 .personnages {
     position: relative;
     overflow: hidden;
+    z-index: 44;
     height:  77rem;
     background: $white;
     @include bcg;
@@ -23,6 +24,7 @@
 
 .wrapper-img__left {
   position: absolute;
+  z-index: -5;
   top:50%;
   left: -16.2rem;
   opacity: 0.4;  

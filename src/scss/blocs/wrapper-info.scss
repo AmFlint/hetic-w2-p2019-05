@@ -19,7 +19,7 @@
 .wrapper-info__title {
     @include flexbox();
     @include flex-direction(column);
-    margin: 4rem 0;
+    margin-bottom: 4rem;
     font-size: $font-title;
     font-family: $Berkshire;
     font-weight: 700;

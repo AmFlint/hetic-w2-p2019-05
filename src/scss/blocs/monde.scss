@@ -10,6 +10,9 @@
   }
 
   .video {
+    &:first-child(){
+      margin-bottom: 4rem;
+    }
     @include tablet-landscape {
       width: 50%;
     }
