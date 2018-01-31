@@ -29,9 +29,17 @@
     margin: 0 auto;
     text-align: center;
     padding: 1.2rem 0;
+
+    @include tablet-portrait() {
+        max-width: 50%;
+    }
 }
 
 .consoles-btn--amiibo {
     max-width: 80%;
-    margin-top: 2rem;
+    margin-top: 2.5rem;
+
+    @include tablet-portrait() {
+        max-width: 35%;
+    }
 }

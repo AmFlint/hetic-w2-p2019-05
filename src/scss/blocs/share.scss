@@ -5,7 +5,7 @@
   padding: 10rem 1.5rem;
   @include bcg;
   text-align: center;
-  font-family: "AnticDidone";
+  font-family: $Didone;
   color: $black;
   @include tablet-portrait {
     background-size: cover !important;

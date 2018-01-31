@@ -57,7 +57,7 @@
 
 .intro__title {
   margin: 0 0 7.7rem 0;
-  font-family: "AnticDidone";
+  font-family: $Didone;
   font-size: $font-main-title;
   font-weight: 700;
 
@@ -77,7 +77,7 @@
   }
 
   span {
-    font-family: "BerkshireSwash";
+    font-family: $Berkshire;
   }
 }
 
@@ -96,7 +96,7 @@
 
   h3 {
     margin-top: 7.4rem;
-    font-family: "AnticDidone";
+    font-family: $Didone;
     font-size: $font-button-order;
   }
 
