@@ -4,7 +4,9 @@
     background-position-x: 60%;
     // height: 100vh;
 
-    @include desktop() {
-        padding: 11.2rem 25rem;
+    @include tablet-landscape {
+        background-size: 135%;
+        background-position-y: 15%;
+        background-position-x: 0;
     }
 }

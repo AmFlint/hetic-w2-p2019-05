@@ -31,9 +31,13 @@
     text-align: center;
     padding: 1.2rem 0;
 
-    @include tablet-portrait() {
+    @include tablet-portrait {
         max-width: 50%;
         font-size: $font-button-order;
+    }
+
+    @include tablet-landscape {
+        max-width: 70%;
     }
 }
 

@@ -95,3 +95,11 @@
         justify-content: space-between;
     }
 }
+
+.wrapper-info--consoles {
+    @include tablet-landscape {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
