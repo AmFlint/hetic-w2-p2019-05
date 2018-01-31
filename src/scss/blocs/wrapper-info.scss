@@ -9,6 +9,7 @@
         width: 40%;
     }
     @include tablet-portrait {
+        width: 45%;
         padding: 0 8rem;        
     }
     @include desktop {
@@ -79,7 +80,7 @@
     @include tablet-landscape {
         text-align: left;
         padding: 0 0;
-        width: 40%;
+        width: 45%;
     }
 }
 
