@@ -2,7 +2,6 @@
   background-image: url("../img/bg-motifs-noir.png");
   @include bcg;
   @include section-padding;
-
   @include tablet-landscape {
     @include flexbox();
     @include justify-content(space-between);
@@ -10,6 +9,10 @@
   }
 
   .video {
+    &:first-child {
+      padding-bottom: 4rem;
+    }
+    
     @include tablet-landscape {
       width: 50%;
     }
@@ -20,4 +23,3 @@
     }
   }
 }
-

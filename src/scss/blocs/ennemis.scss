@@ -10,12 +10,14 @@
     }
 }
 .video {
+  &:last-child {
+    padding-top: 5rem;
+  }  
   @include tablet-landscape {
     width: 50%;
   }
 
   video {
-    padding-top: 5rem;
     height: auto;
     width: 100%;
   }

@@ -1,6 +1,7 @@
 .histoire {
   position: relative;
   overflow: hidden;
+  z-index: 44;
   background: url('../img/backgrounds/bg-motifs-bleu.png'); 
   @include bcg;
   @include section-padding;
@@ -17,6 +18,7 @@
   position: absolute;
   top: 0;
   width: 150%;
+  z-index: -5;
   @include desktop {
     width: 100%;
     left: 66rem;

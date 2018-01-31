@@ -1,5 +1,9 @@
 .amiibo-slider {
     margin-top: 4rem;
+
+    @include tablet-landscape {
+        margin-top: 0;
+    }
 }
 
 .amiibo-slider__figure-title {
@@ -21,13 +25,17 @@
 
 .amiibo-slider__selector {
     position: relative;
+    max-width: 80%;
     height: 0.23rem;
-    margin-bottom: 3rem;
+    margin: 0 auto 3rem;
     background: #817F7F;
 
     @include tablet-portrait() {
         max-width: 60%;
-        margin: 0 auto 3rem; 
+    }
+
+    @include tablet-landscape {
+        max-width: 80%;
     }
 }
 

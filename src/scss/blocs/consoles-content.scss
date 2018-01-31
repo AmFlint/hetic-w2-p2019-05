@@ -1,5 +1,10 @@
 .consoles-content {
     margin-top: 5rem;
+
+    @include tablet-landscape {
+        width: 60%;
+        margin-top: 0;
+    }
 }
 
 .consoles-content_switch {
@@ -8,8 +13,13 @@
     max-width: 90%;
     margin: 4rem auto 0;
 
-    @include tablet-portrait() {
+    @include tablet-portrait {
         max-width: 50%;
+    }
+
+    @include tablet-landscape {
+        max-width: 100%;
+        margin: 0;
     }
 }
 
@@ -17,8 +27,12 @@
     height: 20rem;
     margin: 2rem 0 2.5rem;
 
-    @include tablet-portrait() {
+    @include tablet-portrait {
         height: 48rem;
         margin-top: 3.5rem;
+    }
+
+    @include tablet-landscape {
+        height: 28rem;
     }
 }

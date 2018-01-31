@@ -6,14 +6,20 @@
     @include tablet-landscape {
         text-align: right;
         padding: 0 0;
+    }
+    @include tablet-portrait {
+        padding: 0 8rem;        
+    }
+    @include desktop {
         width: 40%;
+        padding: 0;        
     }
 }
 
 .wrapper-info__title {
     @include flexbox();
     @include flex-direction(column);
-    margin: 4rem 0;
+    margin-bottom: 4rem;
     font-size: $font-title;
     font-family: $Berkshire;
     font-weight: 700;
@@ -21,6 +27,10 @@
         font-size: $font-title;
         margin-top: 0;
     }
+   /*  @include tablet-portrait {
+        margin-top: 0;
+    } */
+
 }
 
 .wrapper-info__title--sticky {
@@ -66,10 +76,10 @@
 }
 
 .wrapper-info__left {
-    @include tablet-landscape {
+    @include desktop {
         text-align: left;
         padding: 0 0;
-        width: 40%;
+        width: 45%;
     }
 }
 
@@ -77,4 +87,19 @@
     position: relative;
     z-index: 2;
     color: $font-tertiary;
+
+    @include tablet-landscape {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+}
+
+.wrapper-info--consoles {
+    @include tablet-landscape {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
