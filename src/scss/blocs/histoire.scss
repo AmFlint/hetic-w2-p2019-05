@@ -3,17 +3,17 @@
   overflow: hidden;
   background: url('../img/backgrounds/bg-motifs-bleu.png'); 
   @include bcg;
-  @include rem(padding, 100px 0px);
+  @include rem(padding, 10rem 0rem);
 
   @include tablet-landscape {
       @include flexbox();
       @include justify-content(space-between);
       @include align-items(center);
-      @include rem(padding, 112px 15px);
+      @include rem(padding, 11.2rem 1.5rem);
   }
   
   @include desktop {
-    @include rem(padding, 112px 250px);
+    @include rem(padding, 11.2rem 25rem);
   }
 }
 
@@ -24,7 +24,7 @@
   width: 150%;
   @include desktop {
     width: 100%;
-    left: 660px;
+    left: 66rem;
   }
     img {
       width: 100%;

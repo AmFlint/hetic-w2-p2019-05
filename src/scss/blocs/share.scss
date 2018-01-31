@@ -2,7 +2,7 @@
   background-image: url("../img/backgrounds/bg-dragon2.jpg");
   background-size: 345% !important;
   background-repeat: no-repeat;
-  @include rem(padding, 100px 15px);
+  @include rem(padding, 10rem 1.5rem);
   @include bcg;
   text-align: center;
   font-family: "AnticDidone";
@@ -15,18 +15,18 @@
     @include justify-content(space-between);
     @include align-items(center);
     margin: 0 auto;
-    @include rem(padding, 116px 400px);
+    @include rem(padding, 11.6rem 40rem);
   }
 }
 
 .share__desc {
-  @include rem(font-size, 16px);
+  @include rem(font-size, 1.6rem);
   line-height: 1.5;
-  @include rem(margin-bottom, 20px);
+  @include rem(margin-bottom, 2rem);
   @include desktop {
     margin-bottom: 0;
-    @include rem(font-size, 18px);
+    @include rem(font-size, 1.8rem);
     text-align: left;
-    @include rem(margin-right, 50px);
+    @include rem(margin-right, 5rem);
   }
 }
