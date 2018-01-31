@@ -8,33 +8,57 @@
 .amiibo-content {
   margin-top: 5rem;
 
-  @include tablet-portrait() {
+  @include tablet-portrait {
     margin-top: 10rem;
+  }
+
+  @include tablet-landscape {
+    margin-top: 0;
   }
 }
 
 .wrapper-img--amiibo {
-    z-index: -1; 
-    opacity: .3;
-    position: absolute;
-    top: -2.3rem;
-    left: calc(-57%);
-    width: 220%;
+  z-index: -1; 
+  opacity: .3;
+  position: absolute;
+  top: -2.3rem;
+  left: calc(-57%);
+  width: 220%;
 
-    @include tablet-portrait() {
-      top: -9rem;
-      left: calc(-27%);
-      width: 160%;
-    }
-
-    @include desktop {
-      width: 100%;
-      left: 66rem;
-    }
-      img {
-        width: 100%;
-        @include tablet-landscape {
-          width: 40%;
-        }
-      }
+  @include tablet-portrait {
+    top: -9rem;
+    left: calc(-27%);
+    width: 160%;
   }
+
+  @include tablet-landscape {
+    top: -27rem;
+    right: -40rem;
+    left: inherit;
+    width: 100%;
+  }
+
+  @include desktop {
+    width: 140%;
+    left:25rem;
+    right: inherit;
+    top: -29rem;
+  }
+    img {
+      width: 100%;
+    }
+}
+
+.amiibo-block {
+  @include tablet-landscape {
+    text-align: right;
+    max-width: 55%;
+    padding-top: 2.5rem;
+  }
+
+  .buttons-wrapper {
+    @include tablet-landscape {
+      justify-content: flex-end;
+    }
+  }
+}

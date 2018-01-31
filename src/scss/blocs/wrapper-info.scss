@@ -6,13 +6,12 @@
     @include tablet-landscape {
         text-align: right;
         padding: 0 0;
-        width: 40%;
     }
     @include tablet-portrait {
-        width: 45%;
         padding: 0 8rem;        
     }
     @include desktop {
+        width: 40%;
         padding: 0;        
     }
 }
@@ -77,7 +76,7 @@
 }
 
 .wrapper-info__left {
-    @include tablet-landscape {
+    @include desktop {
         text-align: left;
         padding: 0 0;
         width: 45%;
@@ -88,4 +87,11 @@
     position: relative;
     z-index: 2;
     color: $font-tertiary;
+
+    @include tablet-landscape {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
 }

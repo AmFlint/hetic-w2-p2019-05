@@ -24,6 +24,7 @@
 
 .consoles-btn--order {
     font-family: $Comfortaa;
+    font-size: $font-button-consoles;
     display: block;
     max-width: 90%;
     margin: 0 auto;
@@ -32,6 +33,7 @@
 
     @include tablet-portrait() {
         max-width: 50%;
+        font-size: $font-button-order;
     }
 }
 
@@ -39,7 +41,12 @@
     max-width: 80%;
     margin-top: 2.5rem;
 
-    @include tablet-portrait() {
+    @include tablet-portrait {
         max-width: 35%;
+    }
+
+    @include desktop {
+        max-width: 100%;
+        font-size: $font-button-discover;
     }
 }
