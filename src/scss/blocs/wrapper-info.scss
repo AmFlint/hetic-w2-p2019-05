@@ -8,6 +8,12 @@
         padding: 0 0;
         width: 40%;
     }
+    @include tablet-portrait {
+        padding: 0 8rem;        
+    }
+    @include desktop {
+        padding: 0;        
+    }
 }
 
 .wrapper-info__title {
@@ -21,6 +27,10 @@
         font-size: $font-title;
         margin-top: 0;
     }
+   /*  @include tablet-portrait {
+        margin-top: 0;
+    } */
+
 }
 
 .wrapper-info__title--sticky {
