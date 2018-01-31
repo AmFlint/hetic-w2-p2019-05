@@ -1,7 +1,7 @@
 .personnages {
     position: relative;
     overflow: hidden;
-    height:  770px;
+    height:  77rem;
     background: $white;
     @include bcg;
 
@@ -19,7 +19,7 @@
 .wrapper-img__left {
   position: absolute;
   top:50%;
-  left: -162px;
+  left: -16.2rem;
   opacity: 0.4;  
   transform: translateY(-50%);
   @include tablet-portrait {
@@ -30,13 +30,13 @@
   }
     img {
       @include desktop {
-        width: 500px;
+        width: 50rem;
       }
     }
 }
 .wrapper-img__right {
   position: absolute;
-  right: -115px;
+  right: -11.5rem;
   transform: translateY(125%);
   opacity: 0.4;  
   @include tablet-portrait {

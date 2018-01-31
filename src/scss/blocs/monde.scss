@@ -1,17 +1,12 @@
 .monde {
   background-image: url("../img/bg-motifs-noir.png");
   @include bcg;
-  @include rem(padding, 100px 0px);
+  @include section-padding;
 
   @include tablet-landscape {
     @include flexbox();
     @include justify-content(space-between);
     @include align-items(center);
-    @include rem(padding, 112px 15px);
-  }
-
-  @include desktop {
-    @include rem(padding, 112px 250px);
   }
 
   .video {

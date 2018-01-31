@@ -1,6 +1,6 @@
 .wrapper-info {
-    @include rem(padding, 0 15px);
-    font-family: "AnticDidone";
+    padding: 0 1.5rem;
+    font-family: $Didone;
     color: $white;
     text-align: center;
     @include tablet-landscape {
@@ -13,29 +13,38 @@
 .wrapper-info__title {
     @include flexbox();
     @include flex-direction(column);
-    @include rem(margin, 40px 0px);
+    margin: 4rem 0;
     font-size: $font-title;
-    font-family: "BerkshireSwash";
+    font-family: $Berkshire;
     font-weight: 700;
     @include tablet-landscape {
-        @include rem(font-size, 30px);
+        font-size: $font-title;
         margin-top: 0;
     }
 }
 
 .wrapper-info__title--sticky {
+    margin: 0 0 2.5rem;
+}
+
+.wrapper-info__title--amiibo {
     margin: 0 0 4rem;
 }
 
+
 .wrapper-info__subtitle {
-    font-family: "AnticDidone";
+    font-family: $Didone;
     font-weight: 400;
 }
 
 .wrapper-info__subtitle--amiibo {
-    margin-top: 2rem;
+    margin-top: 1rem;
     font-size: $font-consoles;
     line-height: 150%;
+
+    @include tablet-portrait() {
+        margin-top: 3rem;
+    }
 }
 
 .wrapper-info__desc--light {
@@ -43,9 +52,17 @@
 }
 
 .wrapper-info__desc {
-    @include rem(font-size, 17px);
+    font-size: $font-text-bloc;
     line-height: 1.47;
-    @include rem(margin-bottom, 30px);
+    margin-bottom: 3rem;
+}
+
+.wrapper-info__desc--amiibo {
+    margin-bottom: 2.5rem;
+
+    @include tablet-portrait() {
+        margin-bottom: 3rem;
+    }
 }
 
 .wrapper-info__left {

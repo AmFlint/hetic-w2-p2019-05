@@ -16,53 +16,22 @@
 }
 
 $Didone: 'AnticDidone', 'arial', 'sans-serif';
-$Berkshire: 'BershireSwash', 'arial', 'sans-serif';
+$Berkshire: 'BerkshireSwash', 'arial', 'sans-serif';
 $Comfortaa: 'Comfortaa', 'arial', 'sans-serif';
 
+$font-main-title: 3.2rem;
+$font-main-title-desktop: 5.5rem;
 $font-title: 2.8rem;
 $font-content: 2.5rem;
 $font-button-discover: 1.6rem;
 $font-button-consoles: 1.4rem;
 $font-button-order: 1.76rem;
 $font-consoles: 2rem;
+$font-text-bloc: 1.7rem;
+$font-mentions: 1.2rem;
 
 
 // PX TO REM WITH IE8 FALLBACK
 @function parseInt($n) { /* 2 */
   @return $n / ($n * 0 + 1);
-}
-
-@mixin rem($property, $values) {
-  $px : (); /* 3 */
-  $rem: (); /* 3 */
-
-  @each $value in $values { /* 4 */
-
-    @if $value == 0 or $value == auto { /* 5 */
-      $px : append($px , $value);
-      $rem: append($rem, $value);
-    }
-
-    @else {
-      $unit: unit($value);    /* 6 */
-      $val: parseInt($value); /* 6 */
-
-      @if $unit == "px" {  /* 7 */
-        $px : append($px,  $value);
-        $rem: append($rem, ($val / 10 + rem));
-      }
-
-      @if $unit == "rem" { /* 7 */
-        $px : append($px,  ($val * 10 + px));
-        $rem: append($rem, $value);
-      }
-    }
-  }
-
-  @if $px == $rem {     /* 8 */
-    #{$property}: $px;  /* 9 */
-  } @else {
-    #{$property}: $px;  /* 9 */
-    #{$property}: $rem; /* 9 */
-  }
 }

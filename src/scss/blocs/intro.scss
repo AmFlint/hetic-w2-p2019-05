@@ -8,7 +8,7 @@
   height: 100vh;
   width: 100%;
 
-  @media only screen and (max-height: 550px) {
+  @media only screen and (max-height: 55rem) {
     height: auto;
   }
 
@@ -18,15 +18,15 @@
     @include justify-content(center);
     height: 100%;
     width: 100%;
-    @include rem(padding, 0px 15px);
+    padding: 0 1.5rem;
   
-    @media only screen and (max-height: 550px) {
-      @include rem(padding, 70px 15px 0px 15px);
+    @media only screen and (max-height: 55rem) {
+      padding: 7rem 1.5rem 0 1.5rem;
     }
   
     @include tablet-landscape {
       @media only screen and (max-height: 550px) {
-        @include rem(padding, 141px 0px 0px 0px);
+        padding: 14.1rem 0 0 0;
       }
     }
   }
@@ -34,50 +34,50 @@
 
 .intro__logo {
   position: absolute;
-  @include rem(top, 30px);
+  top: 3rem;
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 
-  @media only screen and (max-height: 550px) {
+  @media only screen and (max-height: 55rem) {
     position: inherit;
     -webkit-transform: none;
     transform: none;
-    @include rem(margin-bottom, 30px);
+    margin-bottom: 3rem;
   }
 
   @include tablet-landscape {
     position: absolute;
-    @include rem(top, 40px);
-    @include rem(left, 40px);
+    top: 4rem;
+    left: 4rem;
     -webkit-transform: none;
     transform: none;
   }
 }
 
 .intro__title {
-  @include rem(margin, 0px  0px 77px 0px);
-  font-family: "AnticDidone";
-  @include rem(font-size, 32px);
+  margin: 0 0 7.7rem 0;
+  font-family: $Didone;
+  font-size: $font-main-title;
   font-weight: 700;
 
-  @media only screen and (max-height: 550px) {
-    @include rem(margin, 20px 0px 77px 0px);
+  @media only screen and (max-height: 55rem) {
+    margin: 2rem 0 7.7rem;
   }
 
   @include tablet-landscape {
-    @include rem(font-size, 55px);
-    @include rem(margin, 0px  0px 200px 0px);
+    font-size: $font-main-title-desktop;
+    margin: 0 0 20rem;
   }
 
   @include tablet-landscape {
-    @media only screen and (max-height: 550px) {
-      @include rem(margin, 20px 0px 200px 0px);
+    @media only screen and (max-height: 55rem) {
+      margin: 2rem 0 20rem;
     }
   }
 
   span {
-    font-family: "BerkshireSwash";
+    font-family: $Berkshire;
   }
 }
 
@@ -88,23 +88,23 @@
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 
-  @media only screen and (max-height: 550px) {
+  @media only screen and (max-height: 55rem) {
     position: inherit;
     -webkit-transform: inherit;
     transform: inherit;
   }
 
   h3 {
-    @include rem(margin-top, 74px);
-    font-family: "AnticDidone";
-    @include rem(font-size, 18px);
+    margin-top: 7.4rem;
+    font-family: $Didone;
+    font-size: $font-button-order;
   }
 
   div {
     margin: 0 auto;
-    @include rem(margin-top, 15px);
-    @include rem(height, 40px);
-    @include rem(width, 1px);
+    margin-top: 1.5rem;
+    height: 4rem;
+    width: .1rem;
     background: $white;
   }
 }

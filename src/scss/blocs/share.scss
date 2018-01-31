@@ -2,10 +2,10 @@
   background-image: url("../img/backgrounds/bg-dragon2.jpg");
   background-size: 345% !important;
   background-repeat: no-repeat;
-  @include rem(padding, 100px 15px);
+  padding: 10rem 1.5rem;
   @include bcg;
   text-align: center;
-  font-family: "AnticDidone";
+  font-family: $Didone;
   color: $black;
   @include tablet-portrait {
     background-size: cover !important;
@@ -15,18 +15,18 @@
     @include justify-content(space-between);
     @include align-items(center);
     margin: 0 auto;
-    @include rem(padding, 116px 400px);
+    padding: 11.6rem 40rem;
   }
 }
 
 .share__desc {
-  @include rem(font-size, 16px);
+  font-size: $font-button-discover;
   line-height: 1.5;
-  @include rem(margin-bottom, 20px);
+  margin-bottom: 2rem;
   @include desktop {
     margin-bottom: 0;
-    @include rem(font-size, 18px);
+    font-size: $font-button-order;
     text-align: left;
-    @include rem(margin-right, 50px);
+    margin-right: 5rem;
   }
 }

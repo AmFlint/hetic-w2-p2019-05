@@ -2,26 +2,37 @@
     position: relative;
     overflow: hidden;
     background: #060000; 
+    @include section-padding;
+}
 
-    @include rem(padding, 100px 0px);
+.amiibo-content {
+  margin-top: 5rem;
+
+  @include tablet-portrait() {
+    margin-top: 10rem;
+  }
 }
 
 .wrapper-img--amiibo {
-    z-index: 0; 
+    z-index: -1; 
     opacity: .3;
     position: absolute;
-    top: 0;
-    left: calc(-65%);
-    width: 240%;
+    top: -2.3rem;
+    left: calc(-57%);
+    width: 220%;
+
+    @include tablet-portrait() {
+      top: -9rem;
+      left: calc(-27%);
+      width: 160%;
+    }
+
     @include desktop {
       width: 100%;
-      left: 660px;
+      left: 66rem;
     }
       img {
         width: 100%;
-        @include tablet-portrait {
-          width: 40%;
-        }
         @include tablet-landscape {
           width: 40%;
         }
