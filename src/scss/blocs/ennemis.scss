@@ -1,9 +1,11 @@
 .ennemis {
-    background-image: url("../img/bg-motifs-noir.png");
+    background-image: url("../img/backgrounds/bg-motifs-noir2.png");
+    background-size: cover !important;
     @include bcg;
     @include section-padding;
   
     @include tablet-landscape {
+      background-size: contain !important;
       @include flexbox();
       @include justify-content(space-between);
       @include align-items(center);
