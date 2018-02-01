@@ -37,6 +37,10 @@
     }
 
     @include tablet-landscape {
+        max-width: 90%;
+    }
+
+    @include desktop {
         max-width: 70%;
     }
 }
