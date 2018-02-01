@@ -8,7 +8,7 @@
   height: 100vh;
   width: 100%;
 
-  @media only screen and (max-height: 55rem) {
+  @media only screen and (max-height: 35rem) {
     height: auto;
   }
 
@@ -19,11 +19,11 @@
     height: 100%;
     width: 100%;
     padding: 0 1.5rem;
-  
-    @media only screen and (max-height: 55rem) {
+
+    @media only screen and (max-height: 35rem) {
       padding: 7rem 1.5rem 0 1.5rem;
     }
-  
+
     @include tablet-landscape {
       @media only screen and (max-height: 550px) {
         padding: 14.1rem 0 0 0;
@@ -39,7 +39,7 @@
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 
-  @media only screen and (max-height: 55rem) {
+  @media only screen and (max-height: 35rem) {
     position: inherit;
     -webkit-transform: none;
     transform: none;
@@ -61,7 +61,7 @@
   font-size: $font-main-title;
   font-weight: 700;
 
-  @media only screen and (max-height: 55rem) {
+  @media only screen and (max-height: 35rem) {
     margin: 2rem 0 7.7rem;
   }
 
@@ -71,7 +71,7 @@
   }
 
   @include tablet-landscape {
-    @media only screen and (max-height: 55rem) {
+    @media only screen and (max-height: 35rem) {
       margin: 2rem 0 20rem;
     }
   }
@@ -88,7 +88,7 @@
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 
-  @media only screen and (max-height: 55rem) {
+  @media only screen and (max-height: 35rem) {
     position: inherit;
     -webkit-transform: inherit;
     transform: inherit;

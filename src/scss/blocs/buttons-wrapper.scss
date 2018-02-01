@@ -5,7 +5,6 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  font-family: $Comfortaa;
 
   @include tablet-landscape {
     -webkit-box-pack: end;
@@ -21,6 +20,7 @@
   border: none;
   border-radius: .5rem;
   text-align: center;
+  font-family: $Comfortaa;
   font-size: $font-button-discover;
   letter-spacing: 0;
   color: $font-light;
