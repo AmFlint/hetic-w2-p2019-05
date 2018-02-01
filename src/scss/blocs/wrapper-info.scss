@@ -41,6 +41,12 @@
     margin: 0 0 4rem;
 }
 
+.wrapper-info__title--console {
+    @include tablet-landscape {
+        text-align: left;
+    }
+}
+
 
 .wrapper-info__subtitle {
     font-family: $Didone;
@@ -101,5 +107,17 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        width: 50%;
+        padding: 0;
+    }
+
+    .buttons-wrapper__btn--light {
+        margin-right: 1rem;
+    }
+
+    .buttons-wrapper__btn--dark {
+        @include tablet-landscape {
+            display: block;
+        }
     }
 }

@@ -33,6 +33,7 @@
     @include tablet-landscape {
         display: flex;
         justify-content: space-between;
+        padding: 10rem;
     }
 
     @include desktop {
