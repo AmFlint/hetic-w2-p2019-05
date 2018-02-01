@@ -42,7 +42,9 @@
 }
 
 .wrapper-info__title--console {
-    text-align: left;
+    @include tablet-landscape {
+        text-align: left;
+    }
 }
 
 
