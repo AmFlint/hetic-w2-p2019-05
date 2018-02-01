@@ -1,5 +1,6 @@
 .consoles-btn {
     width: 50%;
+    max-width: 18rem;
     padding: 1.5rem 0;
     font-family: 'Helvetica', 'sans-serif';
     font-weight: 600;
@@ -8,6 +9,10 @@
     border-radius: .7rem;
     color: $font-light;
     box-shadow: 0 .1rem .2rem 0 #000;
+
+    @include tablet-portrait {
+        max-width: auto;
+    }
 }
 
 .consoles-btn--switch {
@@ -37,6 +42,10 @@
     }
 
     @include tablet-landscape {
+        max-width: 90%;
+    }
+
+    @include desktop {
         max-width: 70%;
     }
 }
