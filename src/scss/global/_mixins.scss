@@ -6,6 +6,9 @@
     }
 
     @include desktop {
+        padding: 11.2rem 15rem;
+    }
+    @include desktop-lg {
         padding: 11.2rem 25rem;
     }
 }

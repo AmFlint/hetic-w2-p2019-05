@@ -1,0 +1,30 @@
+.video-content {
+    &:first-child {
+        padding-bottom: 4rem;
+        @include desktop {
+            padding-bottom: 0;
+        }
+    }
+    &:last-child {
+        padding-top: 5rem;
+        @include tablet-portrait {
+            padding-top: 0;
+        }
+    } 
+    @include tablet-landscape {
+        width: 50%;
+    }
+
+    iframe {
+        height: 32rem;
+        width: 100%;
+        @include tablet-portrait {
+        height: 48rem;
+        margin-top: 3.5rem;
+        }
+
+        @include tablet-landscape {
+        height: 28rem;
+        }
+    }
+}

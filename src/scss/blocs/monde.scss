@@ -9,19 +9,10 @@
     @include justify-content(space-between);
     @include align-items(center);
   }
-
-  .video {
-    &:first-child {
-      padding-bottom: 4rem;
-    }
-    
+  .wrapper-info {
     @include tablet-landscape {
-      width: 50%;
-    }
-
-    video {
-      height: auto;
-      width: 100%;
+      width: 40%;
+      padding: 0 2rem;
     }
   }
 }
