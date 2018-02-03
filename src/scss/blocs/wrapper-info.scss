@@ -82,10 +82,11 @@
 }
 
 .wrapper-info__left {
-    @include desktop {
+    @include tablet-landscape {
         text-align: left;
+    }
+    @include desktop {
         padding: 0 0;
-        width: 45%;
     }
 }
 

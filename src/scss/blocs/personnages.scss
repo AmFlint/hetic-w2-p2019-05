@@ -1,22 +1,28 @@
 .personnages {
-    position: relative;
-    overflow: hidden;
-    z-index: 44;
-    height:  77rem;
-    background: $white;
-    @include bcg;
-    @include tablet-portrait{
-      background-image: url('../img/backgrounds/bg-personnages.png') ;
-      background-size: cover;
+  position: relative;
+  overflow: hidden;
+  z-index: 44;
+  height:  77rem;
+  background: $white;
+  @include bcg;
+  @include tablet-portrait{
+    background-image: url('../img/backgrounds/bg-personnages.png') ;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .wrapper-content {
+    @include tablet-landscape {
+      padding-bottom: 0;
     }
     .wrapper-info {
-        color: $font-dark;
-        .wrapper-info__title {
-          @include desktop {
-            margin-top: 8rem !important;
-          }
+      color: $font-dark;
+      .wrapper-info__title {
+        @include desktop {
+          margin-top: 8rem !important;
         }
+      }
     }
+  }
 }
 
 .wrapper-info {

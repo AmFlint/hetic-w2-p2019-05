@@ -23,13 +23,15 @@
         display: flex;
         justify-content: flex-end;
         @include desktop() {
-            padding: 10rem 25rem 10rem 0;
+            padding: 10rem 15rem 10rem 0;
+        }
+        @include desktop-lg {
+            padding: 11.2rem 25rem;
         }
     }
 }
 
 .wrapper-content--consoles {
-
     @include tablet-landscape {
         display: flex;
         justify-content: space-between;
@@ -37,6 +39,9 @@
     }
 
     @include desktop {
+        padding: 11.2rem 15rem;
+    }
+    @include desktop-lg {
         padding: 11.2rem 25rem;
     }
 }
