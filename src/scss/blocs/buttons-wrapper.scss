@@ -41,7 +41,7 @@
   @include bcg;
   text-transform: uppercase;
 
-  @include  desktop() {
+  @include desktop() {
     display: block;
     margin-left: 1rem;
   }
@@ -56,7 +56,7 @@
   @include bcg;
   font-size: $font-button-order;
   text-transform: uppercase;
-  @include  tablet-portrait() {
+  @include tablet-portrait() {
     width: 25.3rem;
     font-size: $font-consoles;
   }
