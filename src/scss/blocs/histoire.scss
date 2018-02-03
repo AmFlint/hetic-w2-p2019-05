@@ -19,6 +19,9 @@
   top: 0;
   width: 150%;
   z-index: -5;
+  @include tablet-landscape {
+    width: 100%;
+  }
   @include desktop {
     width: 100%;
     left: 66rem;

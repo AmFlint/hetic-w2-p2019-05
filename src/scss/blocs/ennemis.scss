@@ -1,26 +1,26 @@
 .ennemis {
-    background-image: url("../img/backgrounds/bg-motifs-noir2.png");
-    background-size: cover !important;
-    @include bcg;
-    @include section-padding;
-  
-    @include tablet-landscape {
-      background-size: contain !important;
-      @include flexbox();
-      @include justify-content(space-between);
-      @include align-items(center);
-    }
-}
-.video {
-  &:last-child {
-    padding-top: 5rem;
-  }  
-  @include tablet-landscape {
-    width: 50%;
-  }
+  background-image: url("../img/backgrounds/bg-motifs-noir2.png");
+  background-size: cover !important;
+  @include bcg;
+  @include section-padding;
 
-  video {
-    height: auto;
-    width: 100%;
+  @include tablet-landscape {
+    background-size: contain !important;
+    padding: 11.2rem 5.5rem;
+    @include flexbox();
+    @include justify-content(space-between);
+    @include align-items(center);
+    @include desktop {
+      padding: 11.2rem 15rem;
+    }
+    @include desktop-lg {
+      padding: 11.2rem 25rem;
+    }
+  }
+  .wrapper-info {
+    @include tablet-landscape {
+      width: 40%;
+      padding: 0 2rem;
+    }
   }
 }
