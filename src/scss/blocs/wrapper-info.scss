@@ -4,15 +4,16 @@
     color: $white;
     text-align: center;
     @include tablet-landscape {
+        width: 60%;
         text-align: right;
-        padding: 0 0;
+        padding: 0;
     }
     @include tablet-portrait {
         padding: 0 8rem;        
     }
     @include desktop {
         width: 40%;
-        padding: 0;        
+        padding: 0;
     }
 }
 
