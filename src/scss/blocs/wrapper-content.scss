@@ -19,7 +19,7 @@
 }
 
 .wrapper-content__rightSide {
-    @include desktop() {
+    @include tablet-landscape {
         display: flex;
         justify-content: flex-end;
         @include desktop() {
