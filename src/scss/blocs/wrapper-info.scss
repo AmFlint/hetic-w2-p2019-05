@@ -37,10 +37,6 @@
     margin: 0 0 2.5rem;
 }
 
-.wrapper-info__title--amiibo {
-    margin: 0 0 4rem;
-}
-
 .wrapper-info__title--console {
     @include tablet-landscape {
         text-align: left;
@@ -53,16 +49,6 @@
     font-weight: 400;
 }
 
-.wrapper-info__subtitle--amiibo {
-    margin-top: 1rem;
-    font-size: $font-consoles;
-    line-height: 150%;
-
-    @include tablet-portrait() {
-        margin-top: 3rem;
-    }
-}
-
 .wrapper-info__desc--light {
     color: $font-light;
 }
@@ -71,14 +57,6 @@
     font-size: $font-text-bloc;
     line-height: 1.47;
     margin-bottom: 3rem;
-}
-
-.wrapper-info__desc--amiibo {
-    margin-bottom: 2.5rem;
-
-    @include tablet-portrait() {
-        margin-bottom: 3rem;
-    }
 }
 
 .wrapper-info__left {
@@ -100,6 +78,28 @@
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
+    }
+
+    .wrapper-info__title {
+        margin: 0 0 4rem;
+    }
+
+    .wrapper-info__subtitle {
+        margin-top: 1rem;
+        font-size: $font-consoles;
+        line-height: 150%;
+    
+        @include tablet-portrait() {
+            margin-top: 3rem;
+        }
+    }
+
+    .wrapper-info__desc {
+        margin-bottom: 2.5rem;
+
+        @include tablet-portrait() {
+            margin-bottom: 3rem;
+        }
     }
 }
 
