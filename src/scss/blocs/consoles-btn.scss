@@ -50,17 +50,3 @@
         max-width: 70%;
     }
 }
-
-.consoles-btn--amiibo {
-    max-width: 80%;
-    margin-top: 2.5rem;
-
-    @include tablet-portrait {
-        max-width: 35%;
-    }
-
-    @include desktop {
-        max-width: 100%;
-        font-size: $font-button-discover;
-    }
-}
