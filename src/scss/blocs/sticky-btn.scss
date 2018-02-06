@@ -1,0 +1,27 @@
+.sticky__btn {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 59px;
+  width: 100%;
+  background: url('../img/button-background.jpg') center no-repeat;
+  background-size: 120%;
+  @include bcg;
+  font-family: $Comfortaa;
+  font-size: $font-button-order;
+  color: $white;
+  text-transform: uppercase;
+  z-index: 100;
+  @include tablet-portrait() {
+    display: none;
+  }
+}
