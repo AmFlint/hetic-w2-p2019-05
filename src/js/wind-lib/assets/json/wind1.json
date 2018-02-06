@@ -47,10 +47,10 @@
                   "attrs": {
                     "attributeName":"stop-color",
                     "values":"transparent; black",
-                    "dur":"4s",
                     "fill":"freeze",
                     "begin":"0.5s"
                   },
+                  "dur":true,
                   "children" : []
                 }
               ]
@@ -66,10 +66,10 @@
                   "attrs": {
                     "attributeName":"stop-color",
                     "values":"transparent; black",
-                    "dur":"4s",
                     "fill":"freeze",
                     "begin":"1s"
                   },
+                  "dur":true,
                   "children" : []
                 }
               ]
@@ -92,9 +92,9 @@
                   "attrs":{
                     "attributeName":"stop-color",
                     "values":"transparent; white",
-                    "dur":"4s",
                     "fill":"freeze"
                   },
+                  "dur": true,
                   "children":[]
                 }
               ]
@@ -110,9 +110,9 @@
                   "attrs":{
                     "attributeName":"stop-color",
                     "values":"transparent; white",
-                    "dur":"4s",
                     "fill":"freeze"
                   },
+                  "dur": true,
                   "children": []
                 }
               ]

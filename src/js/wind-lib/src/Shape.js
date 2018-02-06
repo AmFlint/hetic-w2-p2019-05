@@ -8,22 +8,23 @@ class Shape {
         this.slow = [8,6];
         this.medium = [4,3];
         this.fast = [2,1];
-        this.shapes = [
-            require("../assets/json/wind1.json")
-			//,
-            //require("../assets/json/wind2.json")
-        ];
+        /*this.shapes = [
+            "../assets/json/wind1.json",
+            "../assets/json/wind2.json"
+        ];*/
 		this.speed = speed;
 		this.container.classList.add('container--wind');
 		const rand = Math.random();
-		let index;
 		if (rand > 0.66) {
-			index = 0;
+			this.kind = 0;
+			//Require sucks... this is impossible
+        	//this.svg = require(this.shapes[this.kind]);
+        	this.svg = require('../assets/json/wind1.json');
         } else {
-			index = 0;
+			this.kind = 1;
+        	this.svg = require('../assets/json/wind2.json');
         }
-        this.svg = this.shapes[index];
-		this.speedIndex = index;
+		this.speedIndex = this.kind;
 	}
 
     uuid() {
@@ -51,6 +52,12 @@ class Shape {
 		}
 		if (elt.id) {
 			tag.id = this.ids[this.current++];
+		}
+		if (elt.dur) {
+			tag.setAttribute('dur', this[this.speed][this.kind])
+		}
+		if (elt.beg) {
+			tag.setAttribute('begin', this[this.speed][this.kind])
 		}
 		if (elt.rattached) {
 			let baseStart = "url(#";
