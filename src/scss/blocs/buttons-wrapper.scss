@@ -41,7 +41,7 @@
   @include bcg;
   text-transform: uppercase;
 
-  @include desktop() {
+  @include tablet-landscape {
     display: block;
     margin-left: 1rem;
   }
