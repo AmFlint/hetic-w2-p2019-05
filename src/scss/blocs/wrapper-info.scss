@@ -86,6 +86,11 @@
 
     .wrapper-info__title {
         margin: 0 0 4rem;
+        &:nth-child(3) {
+            @include desktop {
+                margin-top: 8rem !important;
+            }
+        }
     }
 
     .wrapper-info__subtitle {

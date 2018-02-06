@@ -14,14 +14,6 @@
     @include tablet-landscape {
       padding-bottom: 0;
     }
-    .wrapper-info {
-      color: $font-dark;
-      .wrapper-info__title {
-        @include desktop {
-          margin-top: 8rem !important;
-        }
-      }
-    }
   }
 }
 
