@@ -3,6 +3,9 @@
     font-family: $Didone;
     color: $white;
     text-align: center;
+    &:nth-child(3){
+        color:#413f3f;
+    }
     @include tablet-landscape {
         width: 60%;
         text-align: right;
@@ -83,6 +86,11 @@
 
     .wrapper-info__title {
         margin: 0 0 4rem;
+        &:nth-child(3) {
+            @include desktop {
+                margin-top: 8rem !important;
+            }
+        }
     }
 
     .wrapper-info__subtitle {
@@ -111,15 +119,5 @@
         justify-content: center;
         width: 50%;
         padding: 0;
-    }
-
-    .buttons-wrapper__btn--light {
-        margin-right: 1rem;
-    }
-
-    .buttons-wrapper__btn--dark {
-        @include tablet-landscape {
-            display: block;
-        }
     }
 }
