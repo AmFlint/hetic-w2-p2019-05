@@ -13,6 +13,7 @@ class Shape {
             "../assets/json/wind2.json"
         ];*/
 		this.speed = speed;
+		console.log(speed);
 		this.container.classList.add('container--wind');
 		const rand = Math.random();
 		if (rand > 0.66) {
@@ -62,8 +63,8 @@ class Shape {
 		if (elt.rattached) {
 			let baseStart = "url(#";
 			let baseEnd = ")";
-			tag.fill = baseStart + this.ids[this.fill] + baseEnd;
-			tag.stroke = baseStart + this.ids[this.stroke] + baseEnd;
+			tag.setAttribute('fill', baseStart + this.ids[this.fill] + baseEnd);
+			tag.setAttribute('stroke', baseStart + this.ids[this.stroke] + baseEnd);
 		}
 		if (elt.dur) {
 			tag.setAttribute('dur', this[this.speed][this.speedIndex]);

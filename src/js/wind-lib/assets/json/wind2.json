@@ -22,7 +22,7 @@
               "tag":"stop",
               "attrs": {
                 "offset":"0%",
-                "stop-color":"red"
+                "stop-color":"transparent"
               },
               "children":[
                 {
@@ -47,7 +47,7 @@
                   "tag":"animate",
                   "attrs": {
                     "attributeName":"stop-color",
-                    "values":"transparent; white",
+                    "values":"transparent; black",
                     "fill":"freeze"
                   },
                   "dur":true,

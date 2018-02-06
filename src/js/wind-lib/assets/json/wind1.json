@@ -46,7 +46,7 @@
                   "tag": "animate",
                   "attrs": {
                     "attributeName":"stop-color",
-                    "values":"transparent; black",
+                    "values":"transparent; white",
                     "fill":"freeze",
                     "begin":"0.5s"
                   },
