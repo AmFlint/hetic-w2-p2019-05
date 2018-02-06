@@ -1,0 +1,47 @@
+.wrapper-wind {
+  width: 8%;
+  //height:100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  //width: 20%;
+  overflow: hidden;
+  z-index: 8;
+  @include tablet-landscape {
+
+  }
+  @include tablet-portrait {
+  }
+  @include desktop {
+
+  }
+}
+svg {
+  position: relative;
+  z-index: 42;
+  display: block;
+  width: 100%;
+}
+.wrapper-wind__backup {
+  opacity: 0;
+  transition: all;
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  z-index: 42;
+}
+.wrapper-wind__backup.fast {
+  transition: all 1s ease-out;
+}
+.wrapper-wind__backup.medium {
+  transition: all 2s ease-out;
+}
+.wrapper-wind__backup.slow {
+  transition: all 3s ease-out;
+}
+.wrapper-wind__backup.visible {
+  opacity: 1;
+}
+
