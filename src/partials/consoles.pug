@@ -5,8 +5,8 @@ section.consoles
             include ../blocs/buttons-wrapper.pug
         .consoles-content
             .consoles-content_switch
-                a(href="#").consoles-btn.consoles-btn--switch Switch
-                a(href="#").consoles-btn.consoles-btn--wii Wii U
+                a(href="#").consoles-btn.consoles-btn--switch.consoles-btn--active#switch Switch
+                a(href="#").consoles-btn.consoles-btn--wii#wii Wii U
             .consoles-content_video
                 iframe(src="https://www.youtube.com/embed/herWXCE7bHI?showinfo=0" frameborder="0" width="100%" height="100%")
-            a(class='consoles-btn--order buttons-wrapper__btn buttons-wrapper__btn--light' href='#') Commander la Nintendo Switch
+            a(class='consoles-btn--order buttons-wrapper__btn buttons-wrapper__btn--light' href='#' id="console-link") Commander la Nintendo Switch
