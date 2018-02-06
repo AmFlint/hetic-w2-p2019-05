@@ -2,8 +2,8 @@
   "tag":"svg",
   "attrs": {
     "xmlns":"http://www.w3.org/2000/svg",
-    "width": 563,
-    "height": 350,
+    "width": "563px",
+    "height": "350px",
     "version": 1.1,
     "viewBox": "0 0 1800 1200"
   },
@@ -46,7 +46,7 @@
                   "tag": "animate",
                   "attrs": {
                     "attributeName":"stop-color",
-                    "values":"transparent; white",
+                    "values":"transparent; black",
                     "fill":"freeze",
                     "begin":"0.5s"
                   },

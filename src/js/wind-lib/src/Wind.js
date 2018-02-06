@@ -1,10 +1,14 @@
 import Shape from './Shape';
 
-class Wind {
-    constructor() {
+export default class Wind {
+    constructor(delegate = null) {
         const speed = ["slow", "medium", "fast"];
-        let pseudoRand = this.getRandomInt(1,3);
-        this.shape = new Shape(speed[pseudoRand]);
+        if (null === delegate) {
+            let pseudoRand = this.getRandomInt(1,3);
+            this.shape = new Shape(speed[pseudoRand]);
+        } else {
+            this.shape = delegate;
+        }
     }
 
     getFormatedWind() {
@@ -15,8 +19,7 @@ class Wind {
         return container;
     }
 
-    getRandomInt(min, max) {
-        return Math.floor(Math.random() * (max - min + 1));
+    static getRandomInt(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
     }
 }
-export default Wind;

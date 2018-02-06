@@ -1,6 +1,5 @@
-class Shape {
+export default class Shape {
 	constructor(speed){
-        this.container = document.createElement('div');
         this.fill = 0;
         this.stroke = 1;
         this.ids = [];
@@ -13,10 +12,7 @@ class Shape {
             "../assets/json/wind2.json"
         ];*/
 		this.speed = speed;
-		console.log(speed);
-		this.container.classList.add('container--wind');
-		const rand = Math.random();
-		if (rand > 0.66) {
+		if (Math.random() > 0.66) {
 			this.kind = 0;
 			//Require sucks... this is impossible
         	//this.svg = require(this.shapes[this.kind]);
@@ -55,10 +51,10 @@ class Shape {
 			tag.id = this.ids[this.current++];
 		}
 		if (elt.dur) {
-			tag.setAttribute('dur', this[this.speed][this.kind])
+			tag.setAttribute('dur', this[this.speed][this.kind] + "s");
 		}
 		if (elt.beg) {
-			tag.setAttribute('begin', this[this.speed][this.kind])
+			tag.setAttribute('begin', this[this.speed][this.kind] + "s");
 		}
 		if (elt.rattached) {
 			let baseStart = "url(#";
@@ -67,7 +63,7 @@ class Shape {
 			tag.setAttribute('stroke', baseStart + this.ids[this.stroke] + baseEnd);
 		}
 		if (elt.dur) {
-			tag.setAttribute('dur', this[this.speed][this.speedIndex]);
+			tag.setAttribute('dur', this[this.speed][this.speedIndex] + "s");
 		}
 		if ( 0 < elt.children.length ) {
             elt.children.forEach(function (child) {
@@ -78,4 +74,3 @@ class Shape {
 		return tag;
 	}
 }
-export default Shape;

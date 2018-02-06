@@ -1,7 +1,6 @@
 .wrapper-wind {
-  background: #76C3EE;
-  width: 100%;
-  height:100%;
+  width: 8%;
+  //height:100%;
   display: block;
   position: absolute;
   top: 0;
@@ -24,3 +23,25 @@ svg {
   display: block;
   width: 100%;
 }
+.wrapper-wind__backup {
+  opacity: 0;
+  transition: all;
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  z-index: 42;
+}
+.wrapper-wind__backup.fast {
+  transition: all 1s ease-out;
+}
+.wrapper-wind__backup.medium {
+  transition: all 2s ease-out;
+}
+.wrapper-wind__backup.slow {
+  transition: all 3s ease-out;
+}
+.wrapper-wind__backup.visible {
+  opacity: 1;
+}
+
