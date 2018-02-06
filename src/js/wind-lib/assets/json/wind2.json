@@ -1,0 +1,111 @@
+{
+  "tag": "",
+  "attrs": {};
+  "children" : [
+    {
+      "tag":"",
+      "attrs": {
+      },
+      "children":[
+        {
+          "tag":"",
+          "attrs": {
+          },
+          "children":[
+            {
+              "tag":"",
+              "attrs": {
+              },
+              "children":[
+                {
+                  "tag":"",
+                  "attrs": {
+                  },
+                  "children":[]
+                }
+              ]
+            },{
+              "tag":"",
+              "attrs": {
+              },
+              "children":[
+                {
+                  "tag":"",
+                  "attrs": {
+                  },
+                  "children":[]
+                }
+              ]
+            }
+          ]
+        },{
+          "tag":"",
+          "attrs": {
+          },
+          "children":[
+            {
+              "tag":"",
+              "attrs": {
+              },
+              "children":[
+                {
+                  "tag":"",
+                  "attrs": {
+                  },
+                  "children":[]
+                }
+              ]
+            },{
+              "tag":"",
+              "attrs": {
+              },
+              "children":[
+                {
+                  "tag":"",
+                  "attrs": {
+                  },
+                  "children":[]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },{
+      "tag":"",
+      "attrs": {
+      },
+      "children":[
+        {
+          "tag":"",
+          "attrs": {
+          },
+          "children":[]
+        }
+      ]
+    }
+  ]
+}
+<svg xmlns="http://www.w3.org/2000/svg" width="100px" height="50px" version="1.1" viewBox="0 0 780 780">
+  <defs>
+    <linearGradient id="aaa">
+      <stop offset="0%" stop-color="red">
+        <animate attributeName="stop-color" values="transparent; black" dur="3s" fill="freeze" />
+      </stop>
+      <stop offset="100%" stop-color="transparent">
+        <animate attributeName="stop-color" values="transparent; black" dur="3s" fill="freeze" begin="3s"/>
+      </stop>
+    </linearGradient>
+    <linearGradient id="bbb">
+      <stop offset="0%" stop-color="transparent">
+        <animate attributeName="stop-color" values="transparent; white" dur="3s" fill="freeze" />
+      </stop>
+      <stop offset="100%" stop-color="transparent">
+        <animate attributeName="stop-color" values="transparent; white" dur="3s" fill="freeze" begin="3s"/>
+      </stop>
+    </linearGradient>
+  </defs>
+  <g fill="url(#lightGradient)" fill-rule="evenodd" stroke="url(#contour)" stroke-width="1">
+    <path d="M116 137s39-46 121-42c82 5 219 42 347 92 128 51 224 62 297 66 73 5 184-17 197-110 12-94-106-128-106-128s-105-29-166-4c-62 25-102 74-102 74s93-60 180-60c88 0 141 35 161 66 20 30 5 79-25 105-31 26-110 46-258 12C615 174 411 98 368 91s-124-22-186 0-66 46-66 46z"/><path d="M2 226s39-46 121-42c82 5 219 42 347 92 128 51 332 97 474 79 210-37 256-201 256-201s-44 83-114 129c-57 38-131 42-142 42-85 6-243-16-296-28-147-34-351-110-394-117s-124-22-186 0-66 46-66 46z"/>
+  </g>
+</svg>
