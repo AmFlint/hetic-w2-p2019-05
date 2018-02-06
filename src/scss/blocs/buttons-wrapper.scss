@@ -31,6 +31,9 @@
 
 .buttons-wrapper__btn--light {
   background: $background-button;
+  &:hover{
+    background: $background-button-light-hover;
+  }
 }
 
 .buttons-wrapper__btn--dark {
@@ -38,6 +41,9 @@
   display: none;
   background: url('../img/button-background.jpg') center no-repeat;
   background-size: 120%;
+  &:hover{
+    background: $background-button-dark-hover;
+  }
   @include bcg;
   text-transform: uppercase;
 
@@ -56,6 +62,9 @@
   @include bcg;
   font-size: $font-button-order;
   text-transform: uppercase;
+  &:hover{
+    background: $background-button-dark-hover;
+  }
   @include tablet-portrait() {
     width: 25.3rem;
     font-size: $font-consoles;
