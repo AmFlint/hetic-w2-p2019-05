@@ -1,0 +1,147 @@
+{
+  "tag":"svg",
+  "attrs": {
+    "xmlns":"http://www.w3.org/2000/svg",
+    "width": "563px",
+    "height": "350px",
+    "version": 1.1,
+    "viewBox": "0 0 1800 1200"
+  },
+  "children": [
+    {
+      "tag" : "defs",
+      "attrs" : {},
+      "children" : [
+        {
+          "tag" : "linearGradient",
+          "id" : true,
+          "attrs" : {},
+          "children": [
+            {
+              "tag":"stop",
+              "attrs": {
+                "offset":"0%",
+                "stop-color":"transparent"
+              },
+              "children":[
+                {
+                  "tag": "animate",
+                  "attrs": {
+                    "attributeName":"stop-color",
+                    "values":"transparent; black",
+                    "dur":"4s",
+                    "fill":"freeze"
+                  },
+                  "children":[]
+                }
+              ]
+            },{
+              "tag":"stop",
+              "attrs": {
+                "offset":"50%",
+                "stop-color":"transparent"
+              },
+              "children":[
+                {
+                  "tag": "animate",
+                  "attrs": {
+                    "attributeName":"stop-color",
+                    "values":"transparent; black",
+                    "fill":"freeze",
+                    "begin":"0.5s"
+                  },
+                  "dur":true,
+                  "children" : []
+                }
+              ]
+            },{
+              "tag":"stop",
+              "attrs": {
+                "offset":"100%",
+                "stop-color":"transparent"
+              },
+              "children":[
+                {
+                  "tag": "animate",
+                  "attrs": {
+                    "attributeName":"stop-color",
+                    "values":"transparent; black",
+                    "fill":"freeze",
+                    "begin":"1s"
+                  },
+                  "dur":true,
+                  "children" : []
+                }
+              ]
+            }
+          ]
+        }, {
+          "tag" : "linearGradiant",
+          "id" : true,
+          "attrs" : {},
+          "children" : [
+            {
+              "tag":"stop",
+              "attrs":{
+                "offset":"0%",
+                "stop-color":"transparent"
+              },
+              "children": [
+                {
+                  "tag":"animate",
+                  "attrs":{
+                    "attributeName":"stop-color",
+                    "values":"transparent; white",
+                    "fill":"freeze"
+                  },
+                  "dur": true,
+                  "children":[]
+                }
+              ]
+            },{
+              "tag":"stop",
+              "attrs":{
+                "offset":"100%",
+                "stop-color":"transparent"
+              },
+              "children": [
+                {
+                  "tag":"animate",
+                  "attrs":{
+                    "attributeName":"stop-color",
+                    "values":"transparent; white",
+                    "fill":"freeze"
+                  },
+                  "dur": true,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }, {
+      "tag" : "g",
+      "rattached":true,
+      "attrs": {
+        "fill-rule":"evenodd",
+        "stroke-width":"1.5"
+      },
+      "children": [
+        {
+          "tag":"path",
+          "attrs": {
+            "d":"M112 166s97 8 124-15c33-28 40-52 38-87-1-18-13-53-65-56-51-3-70 80-47 102 0 0-10-37 3-57s32-32 48-29c48 10 46 61 39 81-6 19-25 38-48 48s-92 13-92 13zM285 169s71 5 90-11c23-21 29-38 27-64 0-13-9-37-47-40-37-2-50 58-34 74 0 0-7-27 2-41 10-15 24-23 35-22 35 8 33 45 28 59-4 14-18 28-35 35-16 7-66 10-66 10zM312 229s74-6 94 12c25 21 30 39 29 66-1 13-10 39-49 42-39 2-53-61-36-77 0 0-8 28 2 43s25 24 37 22c36-8 34-46 29-61s-19-30-37-37c-17-7-69-10-69-10zM151 288s19-31 56-38c38-7 103 1 103 1s-38-21-66-21-58 10-71 22c-14 12-22 36-22 36zM81 270s5-21 25-31 58-17 58-17-25-5-41-1c-16 5-31 16-36 25s-6 24-6 24z"
+          },
+          "children":[]
+        },{
+          "tag":"path",
+          "attrs": {
+            "d":"M0 177s168 30 249 34c80 4 191-22 211-22 19 0 64 15 78 40 13 25 3 55-8 63-10 7-37 15-55-1s-1-58-1-58-29 23-22 49c8 25 22 35 54 35s55-33 56-58c1-26-9-42-24-57-15-14-52-16-56-24-4-9 36-31 41-44 4-13 6-34-10-59-17-25-93-74-93-74s90 74 90 104-34 67-57 67c22-62-10-85-10-85s24 43-5 72c-24 24-92 36-169 34C95 189 0 177 0 177z"
+          },
+          "children":[]
+        }
+      ]
+    }
+  ]
+}
