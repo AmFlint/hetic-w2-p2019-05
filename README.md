@@ -35,3 +35,13 @@ npm run build
 # with yarn
 yarn run build
 ```
+
+### Deploy using this repository's compose file (+ bonus bash script)
+
+In order for this section to work, you first need to install both:
+  - docker (engine)
+  - docker-compose (minimum v.2)
+
+`docker-compose` file will mount the `build` folder (need to run the command `npm run build` beforehand), to a nginx container, and link container's port 80 to your machine's port 3000.
+
+Bash Script automates these steps (`npm install`, `npm run build` and `docker-compose down` + `docker-compose up`). As you may not have (and not need) nodejs/npm on your machine, the npm commands are being ran inside docker ***node:latest*** containers.
